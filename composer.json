@@ -1,0 +1,13 @@
+{
+  "name": "frontend",
+  "description": "Front html",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Oleg",
+      "email": "nexxxt.07@gmail.com"
+    }
+  ],
+  "require": {}
+}
+
