@@ -3,7 +3,7 @@
 
 <div class="container ">
     <div class="row fpad30">
-        <div class="col-lg-8">
+        <div class="col-xl-8">
             <div class="home-sliders box__slider">
                 <div class="swiper" id="homeSlider1">
                     <div class="swiper-wrapper">
@@ -33,9 +33,22 @@
 
                             </a>
                         </div>
+                        <div class="swiper-slide">
+                            <a href="" class="home-sliders__item">
+
+                                <picture>
+                                    <source srcset="images/dist/sl1.jpg 1x, images/dist/sl1@2.jpg 2x"
+                                            media="(min-width: 575px)">
+                                    <source srcset="images/dist/sl1_mob.jpg"
+                                            media="(max-width: 574px)">
+                                    <img src="images/dist/sl1.jpg" alt="" loading="lazy" width="854" height="450">
+                                </picture>
+
+                            </a>
+                        </div>
 
                     </div>
-                    <div class="home-sliders__pagination"></div>
+                    <div class="home-sliders__pagination" id="homeSlider1Pag"></div>
                     <button class="box__slider__nav box__slider__nav--next" id="homeNext" tabindex="0">
                         <svg width="10" height="19">
                             <use xlink:href="#svg-right"></use>
@@ -49,58 +62,62 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
-            <a href="" class="home-top-banner">
-                <picture>
-                    <source srcset="images/dist/banner1.jpg 1x, images/dist/banner1@2.jpg 2x"
-                            media="(min-width: 575px)">
-                    <source srcset="images/dist/banner1_mob.jpg"
-                            media="(max-width: 574px)">
-                    <img src="images/dist/banner1.jpg" alt="" width="414" height="212" class="img-fluid" loading="lazy">
-                </picture>
-            </a>
-
-            <div class="product-day">
-                <div class="product-day__header">
-                    <div class="product-day__caption">
-                        Товар дня
-                    </div>
-                    <div class="product-day__timer" id="daySaleTimerDate" data-date="31011">
-                        <span>08</span>:<span>36</span>:<span>51</span>
-                    </div>
-                </div>
-                <a href="" class="product-day__body">
-                    <div class="product-day__img">
+        <div class="col-xl-4">
+            <div class="row">
+                <div class="col-xl-12 col-lg-6">
+                    <a href="" class="home-top-banner">
                         <picture>
-                            <source srcset="images/dist/lot1.jpg 1x, images/dist/lot1@2.jpg 2x">
-                            <img src="images/dist/lot1.jpg" alt="" width="110" height="110">
+                            <source srcset="images/dist/banner1.jpg 1x, images/dist/banner1@2.jpg 2x"
+                                    media="(min-width: 575px)">
+                            <source srcset="images/dist/banner1_mob.jpg"
+                                    media="(max-width: 574px)">
+                            <img src="images/dist/banner1.jpg" alt="" width="414" height="212" class="img-fluid"
+                                 loading="lazy">
                         </picture>
-                    </div>
-                    <div class="product-day__desc">
-                        <div class="product-day__sale">
-                            -25%
-                        </div>
-                        <div class="product-day__title">
-                            Стойкий
-                            высокопигментированный
-                            консилер
-                        </div>
-                        <div class="product-day__cost">
-                            <div class="prices">
-                                <div class="price price--old">1860 <span class="rur">q</span></div>
-                                <div class="price price--hot">1395 <span class="rur">q</span></div>
+                    </a>
+                </div>
+                <div class="col-xl-12 col-lg-6">
+                    <div class="product-day">
+                        <div class="product-day__header">
+                            <div class="product-day__caption">
+                                Товар дня
+                            </div>
+                            <div class="product-day__timer" id="daySaleTimerDate" data-date="31011">
+                                <span>08</span>:<span>36</span>:<span>51</span>
                             </div>
                         </div>
+                        <a href="" class="product-day__body">
+                            <div class="product-day__img">
+                                <picture>
+                                    <source srcset="images/dist/lot1.jpg 1x, images/dist/lot1@2.jpg 2x">
+                                    <img src="images/dist/lot1.jpg" alt="" width="110" height="110">
+                                </picture>
+                            </div>
+                            <div class="product-day__desc">
+                                <div class="product-day__sale">
+                                    -25%
+                                </div>
+                                <div class="product-day__title">
+                                    Стойкий
+                                    высокопигментированный
+                                    консилер
+                                </div>
+                                <div class="product-day__cost">
+                                    <div class="prices">
+                                        <div class="price price--old">1860 <span class="rur">q</span></div>
+                                        <div class="price price--hot">1395 <span class="rur">q</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </a>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                            timer();
+                        });
+                    </script>
+                </div>
             </div>
-
-
-            <script>
-                document.addEventListener("DOMContentLoaded", () => {
-                    timer();
-                });
-            </script>
         </div>
     </div>
 
@@ -255,12 +272,16 @@
                     </div>
                 </div>
             </div>
-            <button id="next2" class="swiper-button-disabled box__slider__nav box__slider__nav--silver box__slider__nav--next" tabindex="0">
+            <button id="next2"
+                    class="swiper-button-disabled box__slider__nav box__slider__nav--silver box__slider__nav--next"
+                    tabindex="0">
                 <svg width="10" height="19">
                     <use xlink:href="#svg-right"></use>
                 </svg>
             </button>
-            <button id="prev2" class="swiper-button-disabled box__slider__nav box__slider__nav--silver box__slider__nav--prev" tabindex="-1">
+            <button id="prev2"
+                    class="swiper-button-disabled box__slider__nav box__slider__nav--silver box__slider__nav--prev"
+                    tabindex="-1">
                 <svg width="10" height="19">
                     <use xlink:href="#svg-left"></use>
                 </svg>
@@ -303,12 +324,16 @@
                                 </div>
                             </div>
                         </div>
-                        <button id="bannerSliderNext" class="swiper-button-disabled box__slider__nav box__slider__nav--transparent box__slider__nav--next" tabindex="0">
+                        <button id="bannerSliderNext"
+                                class="swiper-button-disabled box__slider__nav box__slider__nav--transparent box__slider__nav--next"
+                                tabindex="0">
                             <svg width="10" height="19">
                                 <use xlink:href="#svg-right"></use>
                             </svg>
                         </button>
-                        <button id="bannerSliderPrev" class="swiper-button-disabled box__slider__nav box__slider__nav--transparent box__slider__nav--prev" tabindex="-1">
+                        <button id="bannerSliderPrev"
+                                class="swiper-button-disabled box__slider__nav box__slider__nav--transparent box__slider__nav--prev"
+                                tabindex="-1">
                             <svg width="10" height="19">
                                 <use xlink:href="#svg-left"></use>
                             </svg>
@@ -356,12 +381,16 @@
                     </div>
                 </div>
             </div>
-            <button id="next3" class="swiper-button-disabled box__slider__nav box__slider__nav--silver box__slider__nav--next" tabindex="0">
+            <button id="next3"
+                    class="swiper-button-disabled box__slider__nav box__slider__nav--silver box__slider__nav--next"
+                    tabindex="0">
                 <svg width="10" height="19">
                     <use xlink:href="#svg-right"></use>
                 </svg>
             </button>
-            <button id="prev3" class="swiper-button-disabled box__slider__nav box__slider__nav--silver box__slider__nav--prev" tabindex="-1">
+            <button id="prev3"
+                    class="swiper-button-disabled box__slider__nav box__slider__nav--silver box__slider__nav--prev"
+                    tabindex="-1">
                 <svg width="10" height="19">
                     <use xlink:href="#svg-left"></use>
                 </svg>
@@ -451,12 +480,16 @@
                     </div>
                 </div>
             </div>
-            <button id="next4" class="swiper-button-disabled box__slider__nav box__slider__nav--silver box__slider__nav--next" tabindex="0">
+            <button id="next4"
+                    class="swiper-button-disabled box__slider__nav box__slider__nav--silver box__slider__nav--next"
+                    tabindex="0">
                 <svg width="10" height="19">
                     <use xlink:href="#svg-right"></use>
                 </svg>
             </button>
-            <button id="prev4" class="swiper-button-disabled box__slider__nav box__slider__nav--silver box__slider__nav--prev" tabindex="-1">
+            <button id="prev4"
+                    class="swiper-button-disabled box__slider__nav box__slider__nav--silver box__slider__nav--prev"
+                    tabindex="-1">
                 <svg width="10" height="19">
                     <use xlink:href="#svg-left"></use>
                 </svg>
@@ -464,7 +497,6 @@
         </div>
     </div>
 </div>
-
 
 
 <!--#include virtual="/parts/footer.html" -->

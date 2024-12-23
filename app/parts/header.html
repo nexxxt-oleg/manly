@@ -25,6 +25,81 @@
 <body>
 <div class="main" id="top">
     <header class="header">
+        <div class="header__mob-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="/" class="header__mob-top__logo d-block">
+                            <img class="img-fluid" src="images/dist/logo.svg" alt="" width="120" height="19">
+                        </a>
+                    </div>
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                        <button class="header__mob-top__btn hamburger hamburger--slider collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#collapseMobMenu">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__middle__menu accordion-collapse collapse" id="collapseMobMenu">
+                <div class="header__middle__menu__wrap">
+                    <div class="container ">
+
+                        <ul class="nav d-block header__middle__menu__level1">
+                            <li>
+                                <a href="" class="" >
+                                    <span>КАТАЛОГ</span>
+                                    <svg width="5" height="8">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="js-nav1" data-target="nav3">
+                                    <span>Глаза</span>
+                                    <svg width="5" height="8">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="js-nav1" data-target="nav4">
+                                    <span>Брови</span>
+                                    <svg width="5" height="8">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="js-nav1" data-target="nav5">
+                                    <span>Губы</span>
+                                    <svg width="5" height="8">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="js-nav1" data-target="">
+                                    <span>Уход за кожей</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="js-nav1" data-target="nav6">
+                                    <span>Кисти</span>
+                                    <svg width="5" height="8">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="header__top">
             <div class="container">
                 <div class="row align-items-center">
@@ -58,180 +133,380 @@
 
         <div class="header__middle">
             <div class="header__middle__wrap">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-5 header__middle__left">
-                            <button class="header__middle__btn hamburger hamburger--squeeze collapsed"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseMenu">
+                <div class="header__middle__inner">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 header__middle__left">
+                                <button class="header__middle__btn hamburger hamburger--squeeze collapsed"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseMenu">
 
                                 <span class="hamburger-box">
                                     <span class="hamburger-inner"></span>
                                 </span>
 
-                                <span class="header__middle__btn__open">
+                                    <span class="header__middle__btn__open">
                                     КАТАЛОГ
                                 </span>
-                            </button>
-                            <ul class="nav">
-                                <li><a href="">НОВИНКИ</a></li>
-                                <li><a href="">MUST HAVE</a></li>
-                                <li><a href="">СКИДКИ%</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2 header__middle__col-logo">
-                            <a href="/" class="header__logo">
-                                <img class="img-fluid" src="images/dist/logo.svg" alt="" width="190" height="30">
-                            </a>
-                        </div>
-                        <div class="col-lg-5">
-                            <ul class="nav header__middle__ico-menu">
-                                <li>
-                                    <a href="">
-                                        <svg width="20" height="20">
-                                            <use xlink:href="#svg-search"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <svg width="23" height="20">
-                                            <use xlink:href="#svg-fav"></use>
-                                        </svg>
-                                        <span class="header__middle__ico-menu__count">20</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <svg width="16" height="20">
-                                            <use xlink:href="#svg-cart"></use>
-                                        </svg>
-                                        <span class="header__middle__ico-menu__count">5</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <svg width="20" height="20">
-                                            <use xlink:href="#svg-user"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <div class="dropdown header__middle__lk">
-                                        <a href="" data-bs-toggle="dropdown">
+                                    <span class="header__middle__btn__close">
+                                    ЗАКРЫТЬ
+                                </span>
+                                </button>
+                                <ul class="nav">
+                                    <li><a href="">НОВИНКИ</a></li>
+                                    <li><a href="">MUST HAVE</a></li>
+                                    <li><a href="">СКИДКИ%</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-2 header__middle__col-logo">
+                                <a href="/" class="header__logo">
+                                    <img class="img-fluid" src="images/dist/logo.svg" alt="" width="190" height="30">
+                                </a>
+                            </div>
+                            <div class="col-xl-5">
+                                <ul class="nav header__middle__ico-menu">
+                                    <li>
+                                        <a href="#collapseSearch" class="header__middle__ico-menu__search collapsed"
+                                           data-bs-toggle="collapse" data-bs-target="#collapseSearch">
+                                            <svg width="20" height="20" class="search-open">
+                                                <use xlink:href="#svg-search"></use>
+                                            </svg>
+                                            <svg width="20" height="20" class="search-close">
+                                                <use xlink:href="#svg-close"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg width="23" height="20">
+                                                <use xlink:href="#svg-fav"></use>
+                                            </svg>
+                                            <span class="header__middle__ico-menu__count">20</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg width="16" height="20">
+                                                <use xlink:href="#svg-cart"></use>
+                                            </svg>
+                                            <span class="header__middle__ico-menu__count">5</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
                                             <svg width="20" height="20">
                                                 <use xlink:href="#svg-user"></use>
                                             </svg>
-                                            <span class="header__middle__lk__name">
+                                        </a>
+                                    </li>
+                                    <!--li>
+                                        <div class="dropdown header__middle__lk">
+                                            <a href="" data-bs-toggle="dropdown">
+                                                <svg width="20" height="20">
+                                                    <use xlink:href="#svg-user"></use>
+                                                </svg>
+                                                <span class="header__middle__lk__name">
                                                 Анастасия
                                                 <svg class="dropdown__line" width="9" height="5">
                                                     <use xlink:href="#svg-down"></use>
                                                 </svg>
                                             </span>
-                                        </a>
-                                        <ul class="dropdown-menu dropdown-menu-end">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
+                                            </a>
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                    </li-->
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="header__middle__menu accordion-collapse collapse" id="collapseMenu">
-                    <div class="container header__middle__menu__wrap">
-                        <div class="row">
-                            <div class="col-lg-3">
-                                <ul class="nav d-block header__middle__menu__level1">
-                                    <li>
-                                        <a href="" class="js-nav1" data-target="nav1">
-                                            <span>НОВИНКИ</span></a>
-                                    </li>
-                                    <li><a href="" class="js-nav1"><span>Мини-версии</span></a></li>
+                    <div class="header__middle__menu__wrap">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <ul class="nav d-block header__middle__menu__level1">
+                                        <li>
+                                            <a href="" class="js-nav1" data-target="nav1">
+                                                <span>НОВИНКИ</span></a>
+                                        </li>
+                                        <li><a href="" class="js-nav1"><span>Мини-версии</span></a></li>
 
-                                    <li>
-                                        <a href="" class="js-nav1" data-target="nav2">
-                                            <span>Лицо</span>
-                                            <svg width="5" height="8">
-                                                <use xlink:href="#svg-right"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="js-nav1" data-target="nav3">
-                                            <span>Глаза</span>
-                                            <svg width="5" height="8">
-                                                <use xlink:href="#svg-right"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="js-nav1" data-target="nav4">
-                                            <span>Брови</span>
-                                            <svg width="5" height="8">
-                                                <use xlink:href="#svg-right"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="js-nav1" data-target="nav5">
-                                            <span>Губы</span>
-                                            <svg width="5" height="8">
-                                                <use xlink:href="#svg-right"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="js-nav1" data-target="">
-                                            <span>Уход за кожей</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="js-nav1" data-target="nav6">
-                                            <span>Кисти</span>
-                                            <svg width="5" height="8">
-                                                <use xlink:href="#svg-right"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-9">
-                                <div class="header__middle__menu__level2" id="nav2">
-                                    <div class="row justify-content-between">
-                                        <div class="col-lg-6">
-                                            <ul class="nav d-block header__middle__menu__level2__list">
-                                                <li><a href="">Тональные кремы</a></li>
-                                                <li><a href="">Аджастеры</a></li>
-                                                <li><a href="">Базы под макияж</a></li>
-                                                <li><a href="">Корректирующие средства</a></li>
-                                                <li><a href="">Пудра</a></li>
-                                                <li><a href="">Румяна</a></li>
-                                                <li><a href="">Хайлайтеры</a></li>
-                                                <li><a href="">Бронзеры</a></li>
-                                                <li><a href="">Фиксатор макияжа</a></li>
-                                                <li><a href="">Снятие макияжа</a></li>
-                                                <li class="header__middle__menu__level2__more-link"><a href="">Смотреть все категории</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <a href="" class="header__middle__menu__level2__banner">
-                                                <picture>
-                                                    <source srcset="images/dist/nav2.jpg 1x, images/dist/nav2@2.jpg 2x" media="(min-width: 575px)">
-                                                    <img src="images/dist/nav2.jpg" alt="" width="524" height="364" class="img-fluid" loading="lazy">
-                                                </picture>
-                                                <div class="header__middle__menu__level2__banner__caption">
-                                                    Средства для получения идеальных оттенков тональных кремов
-                                                </div>
+                                        <li>
+                                            <a href="" class="js-nav1" data-target="nav2">
+                                                <span>Лицо</span>
+                                                <svg width="5" height="8">
+                                                    <use xlink:href="#svg-right"></use>
+                                                </svg>
                                             </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="js-nav1" data-target="nav3">
+                                                <span>Глаза</span>
+                                                <svg width="5" height="8">
+                                                    <use xlink:href="#svg-right"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="js-nav1" data-target="nav4">
+                                                <span>Брови</span>
+                                                <svg width="5" height="8">
+                                                    <use xlink:href="#svg-right"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="js-nav1" data-target="nav5">
+                                                <span>Губы</span>
+                                                <svg width="5" height="8">
+                                                    <use xlink:href="#svg-right"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="js-nav1" data-target="">
+                                                <span>Уход за кожей</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="js-nav1" data-target="nav6">
+                                                <span>Кисти</span>
+                                                <svg width="5" height="8">
+                                                    <use xlink:href="#svg-right"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="header__middle__menu__level2" id="nav1">
+                                        <div class="row header__middle__menu-new">
+                                            <div class="col-lg-8">
+                                                <div class="row">
+                                                    <div class="col-lg-6 fpad15">
+                                                        <a href="" class="header__middle__menu-new__all">
+                                                            ВСЕ НОВИНКИ
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-lg-6 fpad15">
+                                                        <a href="" class="header__middle__menu__level2__banner">
+                                                            <picture>
+                                                                <source srcset="images/dist/nav1_1.jpg 1x, images/dist/nav1_1@2.jpg 2x"
+                                                                        media="(min-width: 575px)">
+                                                                <img src="images/dist/nav1_1.jpg" alt="" width="303"
+                                                                     height="210" class="img-fluid" loading="lazy">
+                                                            </picture>
+                                                            <div class="header__middle__menu__level2__banner__caption">
+                                                                Violet Beauty Sponge
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-lg-6 fpad15">
+                                                        <a href="" class="header__middle__menu__level2__banner">
+                                                            <picture>
+                                                                <source srcset="images/dist/nav1_2.jpg 1x, images/dist/nav1_2@2.jpg 2x"
+                                                                        media="(min-width: 575px)">
+                                                                <img src="images/dist/nav1_2.jpg" alt="" width="303"
+                                                                     height="210" class="img-fluid" loading="lazy">
+                                                            </picture>
+                                                            <div class="header__middle__menu__level2__banner__caption">
+                                                                Сияющие тональные основы<br>
+                                                                WONDER SKIN
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-lg-6 fpad15">
+                                                        <a href="" class="header__middle__menu__level2__banner">
+                                                            <picture>
+                                                                <source srcset="images/dist/nav1_3.jpg 1x, images/dist/nav1_3@2.jpg 2x"
+                                                                        media="(min-width: 575px)">
+                                                                <img src="images/dist/nav1_3.jpg" alt="" width="303"
+                                                                     height="210" class="img-fluid" loading="lazy">
+                                                            </picture>
+                                                            <div class="header__middle__menu__level2__banner__caption">
+                                                                MAGIC SILK теперь в новых тюбиках
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <a href="" class="header__middle__menu__level2__banner">
+                                                    <picture>
+                                                        <source srcset="images/dist/nav1_4.jpg 1x, images/dist/nav1_4@2.jpg 2x"
+                                                                media="(min-width: 575px)">
+                                                        <img src="images/dist/nav1_4.jpg" alt="" width="303"
+                                                             height="470" class="img-fluid" loading="lazy">
+                                                    </picture>
+                                                    <div class="header__middle__menu__level2__banner__caption">
+                                                        Новая палетка теней MANLYPRO “BOTTICELLI” с контрастными цветами
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header__middle__menu__level2" id="nav2">
+                                        <div class="row justify-content-between">
+                                            <div class="col-lg-6">
+                                                <ul class="nav d-block header__middle__menu__level2__list">
+                                                    <li><a href="">Тональные кремы</a></li>
+                                                    <li><a href="">Аджастеры</a></li>
+                                                    <li><a href="">Базы под макияж</a></li>
+                                                    <li><a href="">Корректирующие средства</a></li>
+                                                    <li><a href="">Пудра</a></li>
+                                                    <li><a href="">Румяна</a></li>
+                                                    <li><a href="">Хайлайтеры</a></li>
+                                                    <li><a href="">Бронзеры</a></li>
+                                                    <li><a href="">Фиксатор макияжа</a></li>
+                                                    <li><a href="">Снятие макияжа</a></li>
+                                                    <li class="header__middle__menu__level2__more-link"><a href="">Смотреть
+                                                        все категории</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <a href="" class="header__middle__menu__level2__banner">
+                                                    <picture>
+                                                        <source srcset="images/dist/nav2.jpg 1x, images/dist/nav2@2.jpg 2x"
+                                                                media="(min-width: 575px)">
+                                                        <img src="images/dist/nav2.jpg" alt="" width="524" height="364"
+                                                             class="img-fluid" loading="lazy">
+                                                    </picture>
+                                                    <div class="header__middle__menu__level2__banner__caption">
+                                                        Средства для получения идеальных оттенков тональных кремов
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="header__middle__menu__level2" id="nav6">
+                                        <div class="row justify-content-between">
+                                            <div class="col-lg-6">
+                                                <ul class="nav d-block header__middle__menu__level2__list">
+                                                    <li><a href="">Polar Night Лимитированная серия</a></li>
+                                                    <li><a href="">Elven Song Лимитированная серия</a></li>
+                                                    <li><a href="">Базы под макияж</a></li>
+                                                    <li><a href="">Корректирующие средства</a></li>
+                                                    <li><a href="">Пудра</a></li>
+                                                    <li><a href="">Румяна</a></li>
+                                                    <li><a href="">Хайлайтеры</a></li>
+                                                    <li><a href="">Бронзеры</a></li>
+                                                    <li><a href="">Фиксатор макияжа</a></li>
+                                                    <li><a href="">Снятие макияжа</a></li>
+                                                    <li class="header__middle__menu__level2__more-link"><a href="">Смотреть
+                                                        все категории</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-5 col-xl-4">
+                                                <a href="" class="header__middle__menu__level2__banner2">
+                                                    <picture>
+                                                        <source srcset="images/dist/nav6.jpg 1x, images/dist/nav6@2.jpg 2x"
+                                                                media="(min-width: 575px)">
+                                                        <img src="images/dist/nav6.jpg" alt="" width="303" height="420"
+                                                             class="img-fluid" loading="lazy">
+                                                    </picture>
+                                                    <div class="header__middle__menu__level2__banner2__caption">
+                                                        Гравировка
+                                                        <b>на кистях</b>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="header__middle__menu__mask"></div>
+                </div>
+
+                <div class="header__middle__menu accordion-collapse collapse" id="collapseSearch">
+                    <div class="header__middle__menu__wrap">
+                        <div class="container ">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-6 col-lg-8">
+                                    <div class="header__search-form">
+                                        <input class="header__search-form__inp" type="text" required
+                                               placeholder="поиск">
+                                        <span class="header__search-form__clear">
+                                             <svg width="12" height="12">
+                                                <use xlink:href="#svg-close2"></use>
+                                            </svg>
+                                        </span>
+                                        <button type="submit" class="header__search-form__submit">
+                                            <svg width="20" height="20">
+                                                <use xlink:href="#svg-search"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="header__search-res">
+                                        <a href="" class="header__search-res__item product-search">
+                                            <div class="product-search__img">
+                                                <picture>
+                                                    <source srcset="images/dist/lot1.jpg 1x, images/dist/lot1@2.jpg 2x">
+                                                    <img src="images/dist/lot1.jpg" alt="" width="110" height="110">
+                                                </picture>
+                                            </div>
+                                            <div class="product-search__desc">
+                                                <ul class="nav  product-tips product-search__tips">
+                                                    <li>
+                                                        <span class="product-tips__item product-tips__item--must-have">MUST HAVE</span>
+                                                    </li>
+                                                </ul>
+                                                <div class="product-search__title">
+                                                    Стойкий
+                                                    высокопигментированный
+                                                    консилер
+                                                </div>
+                                                <div class="product-search__cost">
+                                                    <div class="prices">
+                                                        <div class="price price--old">1860 <span class="rur">q</span>
+                                                        </div>
+                                                        <div class="price price--hot">1395 <span class="rur">q</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="" class="header__search-res__item product-search">
+                                            <div class="product-search__img">
+                                                <picture>
+                                                    <source srcset="images/dist/lot1.jpg 1x, images/dist/lot1@2.jpg 2x">
+                                                    <img src="images/dist/lot1.jpg" alt="" width="110" height="110">
+                                                </picture>
+                                            </div>
+                                            <div class="product-search__desc">
+
+                                                <div class="product-search__title">
+                                                    Стойкий
+                                                    высокопигментированный
+                                                    консилер
+                                                    Стойкий
+                                                    высокопигментированный
+                                                    консилер
+                                                </div>
+                                                <div class="product-search__cost">
+                                                    <div class="prices">
+
+                                                        <div class="price price--hot">1395 <span class="rur">q</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="header__search-res__footer">
+                                            <a href="" class="btn btn--bay">ПОКАЗАТЬ ВСЕ РЕЗУЛЬТАТЫ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__middle__menu__mask"></div>
                 </div>
             </div>
         </div>
