@@ -8,12 +8,14 @@
 
 @font-face {
   font-family: 'Gotham Pro';
-  src: url("../fonts/GothaProMed.eot");
-  src: local("Gotha Pro Med"), url("../fonts/GothaProMed.woff") format("woff"), url("../fonts/GothaProMed.ttf") format("truetype"), url("../fonts/GothaProMed.svg") format("svg");
+  src: url('../fonts/GothamPro-Bold.eot');
+  src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+  url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamPro-Bold.woff') format('woff'),
+  url('../fonts/GothamPro-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
-
 
 @font-face {
   font-family: 'Gotham Pro';

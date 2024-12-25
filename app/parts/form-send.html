@@ -2,13 +2,20 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <div class="form-send__title">Будьте в курсе наших новинок и распродаж!</div>
+                <div class="form-send__title">Будьте в курсе наших <span class="text-nowrap">новинок и распродаж!</span></div>
             </div>
             <div class="col-lg-6">
                 <form action="">
                     <div class="form-send__wrap">
                         <input autocomplete="off" type="email" class="form-send__inp" placeholder="Укажите ваш e-mail" required>
-                        <button class="btn btn--black form-send__send" type="submit">ПОДПИСАТЬСЯ</button>
+                        <button class="btn btn--black form-send__send" type="submit">
+                            <span class="form-send__send__text">ПОДПИСАТЬСЯ</span>
+                            <span class="form-send__send__ico">
+                                <svg width="12" height="10" class="d-block">
+                                    <use xlink:href="#svg-send"></use>
+                                </svg>
+                            </span>
+                        </button>
                     </div>
                 </form>
             </div>

@@ -25,16 +25,21 @@
 </head>
 <body>
 <div class="main" id="top">
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__mob-top">
             <div class="container">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-6">
                         <a href="/" class="header__mob-top__logo d-block">
                             <img class="img-fluid" src="images/dist/logo.svg" alt="" width="120" height="19">
                         </a>
                     </div>
                     <div class="col-6 d-flex align-items-center justify-content-end">
+                        <a href="tel:88003331528" class="header__mob-top__tel">
+                            <svg width="20" height="20" class="d-block">
+                                <use xlink:href="#svg-phone"></use>
+                            </svg>
+                        </a>
                         <button class="header__mob-top__btn hamburger hamburger--slider collapsed"
                                 data-bs-toggle="collapse" data-bs-target="#collapseMobMenu">
                                 <span class="hamburger-box">
@@ -46,57 +51,134 @@
             </div>
 
             <div class="header__middle__menu accordion-collapse collapse" id="collapseMobMenu">
-                <div class="header__middle__menu__wrap">
+                <div class="header__middle__menu__wrap header__mob-menu">
                     <div class="container ">
-
-                        <ul class="nav d-block header__middle__menu__level1">
+                        <ul class="nav d-block header__middle__menu__level1 header__mob-menu__nav">
                             <li>
-                                <a href="" class="" >
+                                <a href="" class="">
                                     <span>КАТАЛОГ</span>
                                     <svg width="5" height="8">
                                         <use xlink:href="#svg-right"></use>
                                     </svg>
                                 </a>
                             </li>
+                            <li class="line"></li>
                             <li>
-                                <a href="" class="js-nav1" data-target="nav3">
-                                    <span>Глаза</span>
-                                    <svg width="5" height="8">
-                                        <use xlink:href="#svg-right"></use>
-                                    </svg>
+                                <a href="">
+                                    <span>оплата </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="js-nav1" data-target="nav4">
-                                    <span>Брови</span>
-                                    <svg width="5" height="8">
-                                        <use xlink:href="#svg-right"></use>
-                                    </svg>
+                                <a href="">
+                                    <span>доставка </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="js-nav1" data-target="nav5">
-                                    <span>Губы</span>
-                                    <svg width="5" height="8">
-                                        <use xlink:href="#svg-right"></use>
-                                    </svg>
+                                <a href="">
+                                    <span>где купить </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="js-nav1" data-target="">
-                                    <span>Уход за кожей</span>
+                                <a href="">
+                                    <span>Узнать статус заказа </span>
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="js-nav1" data-target="nav6">
-                                    <span>Кисти</span>
-                                    <svg width="5" height="8">
-                                        <use xlink:href="#svg-right"></use>
-                                    </svg>
+                                <a href="">
+                                    <span>Гравировка на кистях </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>АРЕНДА ОБОРУДОВАНИЯ </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Вдохновение</span>
+                                </a>
+                            </li>
+                            <li class="line"></li>
+                            <li>
+                                <a href="">
+                                    <span>О бренде</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>РАБОТА В MANLY PRO</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>СОТРУДНИЧЕСТВО</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Контакты</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>ПРАВОВАЯ ИНФОРМАЦИЯ</span>
                                 </a>
                             </li>
                         </ul>
-
+                        <div class="header__mob-menu__info fpad30">
+                            <a href="tel:88003331528" class="header__mob-menu__phone">8 800 333 15 28</a>
+                            <a href="mailto:INFO@MANLYCOSMETICS.RU" class="header__mob-menu__email">INFO@MANLYCOSMETICS.RU</a>
+                        </div>
+                        <div class="header__mob-menu__marketplace fpad30">
+                            <div class="header__mob-menu__marketplace__title">
+                                Manly pro на маркетплесах
+                            </div>
+                            <ul class="nav header__mob-menu__marketplace__list">
+                                <li>
+                                    <a href="" target="_blank" class="header__mob-menu__marketplace__big">
+                                        <svg width="72" height="15" xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 750 163.63">
+                                            <path stroke-width="0" fill="currentColor"
+                                                  d="m313.32,121.77h-64.68L331.23,12.44c1.83-2.45,1.32-5.9-1.12-7.73-.94-.7-2.09-1.09-3.26-1.1h-119.49c-10.55,0-19.1,8.55-19.1,19.1s8.55,19.1,19.1,19.1h53.73l-82.9,109.38c-1.85,2.39-1.42,5.82.97,7.68.98.76,2.19,1.16,3.42,1.15h130.75c10.53-.55,18.63-9.53,18.08-20.06-.51-9.77-8.31-17.57-18.08-18.08v-.1ZM730.9,3.61c-10.55,0-19.1,8.55-19.1,19.1v64.06L608.57,4.85c-2.34-1.91-5.79-1.56-7.7.78-.81.99-1.24,2.23-1.23,3.5v131.68c0,10.55,8.55,19.1,19.1,19.1s19.1-8.55,19.1-19.1v-64.06l103.23,81.97c2.4,1.88,5.87,1.46,7.75-.94.76-.97,1.17-2.16,1.18-3.4V22.71c0-10.55-8.55-19.1-19.1-19.1m-273.11,121.77c-43.67,0-76.34-23.02-76.34-43.62s32.67-43.62,76.34-43.62,76.34,23.02,76.34,43.62-32.57,43.62-76.34,43.62M457.79,0C394.56,0,343.31,36.6,343.31,81.76s51.26,81.76,114.49,81.76,114.49-36.6,114.49-81.76S521.03,0,457.79,0M81.86,125.43c-24.12.03-43.69-19.5-43.72-43.62-.03-24.12,19.5-43.69,43.62-43.72,24.12-.03,43.69,19.5,43.72,43.62v.05c0,24.1-19.52,43.64-43.62,43.67M81.86,0C36.68-.03.03,36.58,0,81.76c-.03,45.19,36.58,81.84,81.76,81.87,45.18.03,81.84-36.58,81.86-81.76v-.1C163.63,36.61,127.02,0,81.86,0"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" class="header__mob-menu__marketplace__big">
+                                        <svg width="87" height="10" xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 240 28">
+                                            <path stroke-width="0" fill="currentColor"
+                                                  d="m7.32,27.49L0,.48h4.8l5.63,20.74L16.47.48h4.48s6.05,20.85,6.05,20.85L32.65.49h4.81s-7.33,27-7.33,27h-5.57s-5.85-20.17-5.85-20.17l-5.86,20.17s-5.53,0-5.53,0ZM40.77.5h4.57v26.97h-4.57V.5Zm14.35,22.74h11.14v4.23h-15.62V.5h4.48v22.74ZM80.33.53c3.75,0,6.88,1.31,9.34,3.89,2.49,2.58,3.75,5.79,3.75,9.58s-1.26,6.97-3.75,9.58c-2.46,2.58-5.58,3.89-9.34,3.89h-10.76V.5h10.76v.03h0Zm0,22.74c2.59,0,4.7-.87,6.28-2.61,1.64-1.74,2.46-3.98,2.46-6.63s-.82-4.88-2.46-6.63c-1.61-1.74-3.72-2.61-6.28-2.61h-6.25v18.48h6.25Zm37.22-3.51c0,2.21-.79,4.05-2.4,5.51-1.61,1.46-3.5,2.21-5.84,2.21h-11.7V.5h10.85c2.24,0,4.13.75,5.68,2.15,1.58,1.43,2.33,3.21,2.33,5.32,0,2.37-.95,4.17-2.78,5.51,2.4,1.25,3.85,3.49,3.85,6.29Zm-15.43-15.1v7.1h6.37c1.99,0,3.5-1.56,3.5-3.55s-1.51-3.55-3.5-3.55h-6.37Zm7.22,18.65c2.08,0,3.72-1.65,3.72-3.77s-1.64-3.77-3.72-3.77h-7.22v7.56h7.22v-.03Zm16.94-.06h12.11v4.23h-16.59V.5h16.4v4.23h-11.93v7h10.95v4.2h-10.95v7.32h0Zm31.74,4.23l-5.8-9.84h-5.3v9.84h-4.48V.5h10.95c2.46,0,4.54.84,6.21,2.55,1.7,1.65,2.59,3.7,2.59,6.13,0,3.42-2.18,6.57-5.43,7.81l6.21,10.49h-4.95Zm-11.1-22.82v9.03h6.44c2.4,0,4.29-1.99,4.29-4.51s-1.92-4.51-4.29-4.51h-6.44Zm35.05,22.82l-5.77-9.84h-5.3v9.84h-4.48V.48h10.95c2.46,0,4.54.84,6.21,2.55,1.7,1.65,2.59,3.71,2.59,6.14,0,3.43-2.18,6.57-5.43,7.82l6.21,10.5h-4.98Zm-11.07-22.83v9.03h6.44c2.4,0,4.29-1.99,4.29-4.52s-1.92-4.52-4.29-4.52h-6.44ZM190.24.49h4.48v27h-4.48V.49Zm14.26,22.76h12.11v4.23h-16.59V.5h16.4v4.23h-11.92v7h10.95v4.2h-10.95v7.32h0Zm15.24-1.91l3.88-2.24c1.1,3.05,3.34,4.54,6.78,4.54s5.08-1.43,5.08-3.55c0-1.12-.47-1.93-1.36-2.49-.88-.59-2.52-1.24-4.86-1.93-2.62-.78-3.91-1.28-5.74-2.46-1.77-1.24-2.65-3.02-2.65-5.44s.85-4.26,2.59-5.66c1.7-1.43,3.79-2.12,6.21-2.12,4.38,0,7.76,2.24,9.53,5.94l-3.79,2.15c-1.14-2.49-3.06-3.76-5.74-3.76s-4.29,1.31-4.29,3.36,1.32,2.92,5.52,4.2c1.04.34,1.8.59,2.27.78.51.16,1.17.44,2.02.78.88.34,1.58.75,1.99,1.09,1.45,1.12,3,2.95,2.81,5.54,0,2.43-.88,4.39-2.68,5.82-1.77,1.43-4.1,2.12-7,2.12-5.3-.03-9.15-2.52-10.57-6.66h0Z"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__mob-menu__marketplace">
+                            <div class="header__mob-menu__marketplace__title">
+                                Мы в социальных сетях
+                            </div>
+                            <ul class="nav header__mob-menu__marketplace__list">
+                                <li>
+                                    <a href="" target="_blank" class="header__mob-menu__marketplace__min">
+                                        <svg width="24" height="15" xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 66.71 41.62">
+                                            <path stroke-width="0" fill="currentColor"
+                                                  d="m0,0c.54,26,13.54,41.62,36.33,41.62h1.29v-14.88c8.38.83,14.71,6.96,17.25,14.88h11.83c-3.25-11.83-11.79-18.38-17.13-20.88,5.33-3.08,12.83-10.58,14.62-20.75h-10.75c-2.33,8.25-9.25,15.75-15.83,16.46V0h-10.75v28.83c-6.67-1.67-15.08-9.75-15.46-28.83H0Z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" class="header__mob-menu__marketplace__min">
+                                        <svg width="24" height="20" xmlns="http://www.w3.org/2000/svg"
+                                             viewBox="0 0 511.99 426.67">
+                                            <path stroke-width="0" fill="currentColor"
+                                                  d="m200.9,281.2l-8.47,119.13c12.12,0,17.37-5.21,23.66-11.46l56.81-54.29,117.72,86.21c21.59,12.03,36.8,5.7,42.62-19.86L510.51,38.86l.02-.02c6.85-31.91-11.54-44.39-32.58-36.57L23.77,176.16c-31,12.03-30.53,29.31-5.27,37.14l116.12,36.12L404.33,80.65c12.69-8.41,24.23-3.75,14.74,4.65l-218.18,195.9Z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -165,41 +247,63 @@
                             </div>
                             <div class="col-xl-5">
                                 <ul class="nav header__middle__ico-menu">
-                                    <li>
+                                    <li class="header__middle__ico-menu__mob-nav">
+                                        <a href="">
+                                            <div class="header__middle__ico-menu__wrap">
+                                                <svg width="20" height="20" class="search-open">
+                                                    <use xlink:href="#svg-search"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="header__middle__ico-menu__mob-caption">Поиск</div>
+                                        </a>
+                                    </li>
+                                    <li class="header__middle__ico-menu__pc-lk">
                                         <a href="#collapseSearch" class="header__middle__ico-menu__search collapsed"
                                            data-bs-toggle="collapse" data-bs-target="#collapseSearch">
-                                            <svg width="20" height="20" class="search-open">
-                                                <use xlink:href="#svg-search"></use>
-                                            </svg>
-                                            <svg width="20" height="20" class="search-close">
-                                                <use xlink:href="#svg-close"></use>
-                                            </svg>
+                                            <div class="header__middle__ico-menu__wrap">
+                                                <svg width="20" height="20" class="search-open">
+                                                    <use xlink:href="#svg-search"></use>
+                                                </svg>
+                                                <svg width="20" height="20" class="search-close">
+                                                    <use xlink:href="#svg-close"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="header__middle__ico-menu__mob-caption">Поиск</div>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <svg width="23" height="20">
-                                                <use xlink:href="#svg-fav"></use>
-                                            </svg>
-                                            <span class="header__middle__ico-menu__count">20</span>
+                                            <div class="header__middle__ico-menu__wrap">
+                                                <svg width="23" height="20">
+                                                    <use xlink:href="#svg-fav"></use>
+                                                </svg>
+                                                <span class="header__middle__ico-menu__count">20</span>
+                                            </div>
+                                            <div class="header__middle__ico-menu__mob-caption">Избранное</div>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="">
-                                            <svg width="16" height="20">
-                                                <use xlink:href="#svg-cart"></use>
-                                            </svg>
-                                            <span class="header__middle__ico-menu__count">5</span>
+                                            <div class="header__middle__ico-menu__wrap">
+                                                <svg width="16" height="20">
+                                                    <use xlink:href="#svg-cart"></use>
+                                                </svg>
+                                                <span class="header__middle__ico-menu__count">5</span>
+                                            </div>
+                                            <div class="header__middle__ico-menu__mob-caption">Корзина</div>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="header__middle__ico-menu__mob-nav">
                                         <a href="">
-                                            <svg width="20" height="20">
-                                                <use xlink:href="#svg-user"></use>
-                                            </svg>
+                                            <div class="header__middle__ico-menu__wrap">
+                                                <svg width="20" height="20">
+                                                    <use xlink:href="#svg-user"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="header__middle__ico-menu__mob-caption">Кабинет</div>
                                         </a>
                                     </li>
-                                    <!--li>
+                                    <li class="header__middle__ico-menu__pc-lk">
                                         <div class="dropdown header__middle__lk">
                                             <a href="" data-bs-toggle="dropdown">
                                                 <svg width="20" height="20">
@@ -218,7 +322,17 @@
                                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                                             </ul>
                                         </div>
-                                    </li-->
+                                    </li>
+                                    <li class="header__middle__ico-menu__mob-nav">
+                                        <a href="">
+                                            <div class="header__middle__ico-menu__wrap">
+                                                <svg width="20" height="20">
+                                                    <use xlink:href="#svg-cat"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="header__middle__ico-menu__mob-caption">Каталог</div>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -586,7 +700,7 @@
                                     media="(min-width: 575px)">
                             <source srcset="images/dist/banner1_mob.jpg"
                                     media="(max-width: 574px)">
-                            <img src="images/dist/banner1.jpg" alt="" width="414" height="212" class="img-fluid"
+                            <img src="images/dist/banner1.jpg" alt="" width="414" height="212" class="img-fluid w-100"
                                  loading="lazy">
                         </picture>
                     </a>
@@ -754,10 +868,10 @@
         <div class="box-slider__header row">
             <div class="col-lg-2">
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-7">
                 <div class="box-slider__title">НОВИНКИ</div>
             </div>
-            <div class="col-lg-2 box-slider__col-link">
+            <div class="col-lg-2 box-slider__col-link col-5">
                 <a href="" class="box-slider__more-link">Смотреть все</a>
             </div>
         </div>
@@ -1086,7 +1200,7 @@
             <picture>
                 <source srcset="images/dist/f-banner1.jpg 1x, images/dist/f-banner1@2.jpg 2x"
                         media="(min-width: 575px)">
-                <source srcset="images/dist/banner1_mob.jpg"
+                <source srcset="images/dist/f-banner1_mob.jpg"
                         media="(max-width: 574px)">
                 <img src="images/dist/f-banner1.jpg" alt="" width="1375" height="470" loading="lazy">
             </picture>
@@ -1233,10 +1347,10 @@
         <div class="box-slider__header row">
             <div class="col-lg-2">
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-7">
                 <div class="box-slider__title">MUST HAVE</div>
             </div>
-            <div class="col-lg-2 box-slider__col-link">
+            <div class="col-lg-2 box-slider__col-link col-5">
                 <a href="" class="box-slider__more-link">Смотреть все</a>
             </div>
         </div>
@@ -1565,9 +1679,9 @@
             <a href="" class="banner-grid__item__link">
                 <picture>
                     <source srcset="images/dist/b1.jpg 1x, images/dist/b1@2.jpg 2x"
-                            media="(min-width: 575px)">
-                    <source srcset="images/dist/banner1_mob.jpg"
-                            media="(max-width: 574px)">
+                            media="(min-width: 767px)">
+                    <source srcset="images/dist/b1_mob.jpg"
+                            media="(max-width: 768px)">
                     <img class="img-fluid" src="images/dist/b1.jpg" alt="" width="614" height="450" loading="lazy">
                 </picture>
                 <div class="banner-grid__item__title">
@@ -1579,9 +1693,9 @@
             <a href="" class="banner-grid__item__link">
                 <picture>
                     <source srcset="images/dist/b2.jpg 1x, images/dist/b2@2.jpg 2x"
-                            media="(min-width: 575px)">
-                    <source srcset="images/dist/banner1_mob.jpg"
-                            media="(max-width: 574px)">
+                            media="(min-width: 767px)">
+                    <source srcset="images/dist/b2_mob.jpg"
+                            media="(max-width: 768px)">
                     <img class="img-fluid" src="images/dist/b2.jpg" alt="" width="614" height="450" loading="lazy">
                 </picture>
                 <div class="banner-grid__item__title">
@@ -1593,9 +1707,9 @@
             <a href="" class="banner-grid__item__link">
                 <picture>
                     <source srcset="images/dist/b3.jpg 1x, images/dist/b3@2.jpg 2x"
-                            media="(min-width: 575px)">
-                    <source srcset="images/dist/banner1_mob.jpg"
-                            media="(max-width: 574px)">
+                            media="(min-width: 767px)">
+                    <source srcset="images/dist/b3_mob.jpg"
+                            media="(max-width: 768px)">
                     <img class="img-fluid" src="images/dist/b3.jpg" alt="" width="1295" height="350" loading="lazy">
                 </picture>
                 <div class="banner-grid__item__title">
@@ -1609,10 +1723,10 @@
         <div class="box-slider__header row">
             <div class="col-lg-2">
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-7">
                 <div class="box-slider__title">СКИДКИ%</div>
             </div>
-            <div class="col-lg-2 box-slider__col-link">
+            <div class="col-lg-2 box-slider__col-link col-5">
                 <a href="" class="box-slider__more-link">Смотреть все</a>
             </div>
         </div>
@@ -1931,13 +2045,20 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <div class="form-send__title">Будьте в курсе наших новинок и распродаж!</div>
+                <div class="form-send__title">Будьте в курсе наших <span class="text-nowrap">новинок и распродаж!</span></div>
             </div>
             <div class="col-lg-6">
                 <form action="">
                     <div class="form-send__wrap">
                         <input autocomplete="off" type="email" class="form-send__inp" placeholder="Укажите ваш e-mail" required>
-                        <button class="btn btn--black form-send__send" type="submit">ПОДПИСАТЬСЯ</button>
+                        <button class="btn btn--black form-send__send" type="submit">
+                            <span class="form-send__send__text">ПОДПИСАТЬСЯ</span>
+                            <span class="form-send__send__ico">
+                                <svg width="12" height="10" class="d-block">
+                                    <use xlink:href="#svg-send"></use>
+                                </svg>
+                            </span>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -1958,7 +2079,7 @@
             </a>
         </div>
         <div class="row footer__body">
-            <div class="col-xl-6 col-lg-4">
+            <div class="col-xl-6 col-lg-4 footer__body__col-info">
                 <div class="fpad15">
                     <a href="tel:88003331528" class="footer__phone">8 800 333 15 28</a>
                 </div>
@@ -1971,7 +2092,7 @@
                         <li><a href="">Адреса магазинов партнеров</a></li>
                     </ul>
                 </div>
-                <div class="footer__marketplace fpad30">
+                <div class="footer__marketplace">
                     <div class="footer__marketplace__title">
                         Manly pro на маркетплесах
                     </div>
@@ -1979,14 +2100,16 @@
                         <li>
                             <a href="" target="_blank" class="footer__marketplace__big">
                                 <svg width="72" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 163.63">
-                                    <path stroke-width="0" fill="currentColor" d="m313.32,121.77h-64.68L331.23,12.44c1.83-2.45,1.32-5.9-1.12-7.73-.94-.7-2.09-1.09-3.26-1.1h-119.49c-10.55,0-19.1,8.55-19.1,19.1s8.55,19.1,19.1,19.1h53.73l-82.9,109.38c-1.85,2.39-1.42,5.82.97,7.68.98.76,2.19,1.16,3.42,1.15h130.75c10.53-.55,18.63-9.53,18.08-20.06-.51-9.77-8.31-17.57-18.08-18.08v-.1ZM730.9,3.61c-10.55,0-19.1,8.55-19.1,19.1v64.06L608.57,4.85c-2.34-1.91-5.79-1.56-7.7.78-.81.99-1.24,2.23-1.23,3.5v131.68c0,10.55,8.55,19.1,19.1,19.1s19.1-8.55,19.1-19.1v-64.06l103.23,81.97c2.4,1.88,5.87,1.46,7.75-.94.76-.97,1.17-2.16,1.18-3.4V22.71c0-10.55-8.55-19.1-19.1-19.1m-273.11,121.77c-43.67,0-76.34-23.02-76.34-43.62s32.67-43.62,76.34-43.62,76.34,23.02,76.34,43.62-32.57,43.62-76.34,43.62M457.79,0C394.56,0,343.31,36.6,343.31,81.76s51.26,81.76,114.49,81.76,114.49-36.6,114.49-81.76S521.03,0,457.79,0M81.86,125.43c-24.12.03-43.69-19.5-43.72-43.62-.03-24.12,19.5-43.69,43.62-43.72,24.12-.03,43.69,19.5,43.72,43.62v.05c0,24.1-19.52,43.64-43.62,43.67M81.86,0C36.68-.03.03,36.58,0,81.76c-.03,45.19,36.58,81.84,81.76,81.87,45.18.03,81.84-36.58,81.86-81.76v-.1C163.63,36.61,127.02,0,81.86,0"/>
+                                    <path stroke-width="0" fill="currentColor"
+                                          d="m313.32,121.77h-64.68L331.23,12.44c1.83-2.45,1.32-5.9-1.12-7.73-.94-.7-2.09-1.09-3.26-1.1h-119.49c-10.55,0-19.1,8.55-19.1,19.1s8.55,19.1,19.1,19.1h53.73l-82.9,109.38c-1.85,2.39-1.42,5.82.97,7.68.98.76,2.19,1.16,3.42,1.15h130.75c10.53-.55,18.63-9.53,18.08-20.06-.51-9.77-8.31-17.57-18.08-18.08v-.1ZM730.9,3.61c-10.55,0-19.1,8.55-19.1,19.1v64.06L608.57,4.85c-2.34-1.91-5.79-1.56-7.7.78-.81.99-1.24,2.23-1.23,3.5v131.68c0,10.55,8.55,19.1,19.1,19.1s19.1-8.55,19.1-19.1v-64.06l103.23,81.97c2.4,1.88,5.87,1.46,7.75-.94.76-.97,1.17-2.16,1.18-3.4V22.71c0-10.55-8.55-19.1-19.1-19.1m-273.11,121.77c-43.67,0-76.34-23.02-76.34-43.62s32.67-43.62,76.34-43.62,76.34,23.02,76.34,43.62-32.57,43.62-76.34,43.62M457.79,0C394.56,0,343.31,36.6,343.31,81.76s51.26,81.76,114.49,81.76,114.49-36.6,114.49-81.76S521.03,0,457.79,0M81.86,125.43c-24.12.03-43.69-19.5-43.72-43.62-.03-24.12,19.5-43.69,43.62-43.72,24.12-.03,43.69,19.5,43.72,43.62v.05c0,24.1-19.52,43.64-43.62,43.67M81.86,0C36.68-.03.03,36.58,0,81.76c-.03,45.19,36.58,81.84,81.76,81.87,45.18.03,81.84-36.58,81.86-81.76v-.1C163.63,36.61,127.02,0,81.86,0"/>
                                 </svg>
                             </a>
                         </li>
                         <li>
                             <a href="" target="_blank" class="footer__marketplace__big">
                                 <svg width="87" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 28">
-                                    <path stroke-width="0" fill="currentColor" d="m7.32,27.49L0,.48h4.8l5.63,20.74L16.47.48h4.48s6.05,20.85,6.05,20.85L32.65.49h4.81s-7.33,27-7.33,27h-5.57s-5.85-20.17-5.85-20.17l-5.86,20.17s-5.53,0-5.53,0ZM40.77.5h4.57v26.97h-4.57V.5Zm14.35,22.74h11.14v4.23h-15.62V.5h4.48v22.74ZM80.33.53c3.75,0,6.88,1.31,9.34,3.89,2.49,2.58,3.75,5.79,3.75,9.58s-1.26,6.97-3.75,9.58c-2.46,2.58-5.58,3.89-9.34,3.89h-10.76V.5h10.76v.03h0Zm0,22.74c2.59,0,4.7-.87,6.28-2.61,1.64-1.74,2.46-3.98,2.46-6.63s-.82-4.88-2.46-6.63c-1.61-1.74-3.72-2.61-6.28-2.61h-6.25v18.48h6.25Zm37.22-3.51c0,2.21-.79,4.05-2.4,5.51-1.61,1.46-3.5,2.21-5.84,2.21h-11.7V.5h10.85c2.24,0,4.13.75,5.68,2.15,1.58,1.43,2.33,3.21,2.33,5.32,0,2.37-.95,4.17-2.78,5.51,2.4,1.25,3.85,3.49,3.85,6.29Zm-15.43-15.1v7.1h6.37c1.99,0,3.5-1.56,3.5-3.55s-1.51-3.55-3.5-3.55h-6.37Zm7.22,18.65c2.08,0,3.72-1.65,3.72-3.77s-1.64-3.77-3.72-3.77h-7.22v7.56h7.22v-.03Zm16.94-.06h12.11v4.23h-16.59V.5h16.4v4.23h-11.93v7h10.95v4.2h-10.95v7.32h0Zm31.74,4.23l-5.8-9.84h-5.3v9.84h-4.48V.5h10.95c2.46,0,4.54.84,6.21,2.55,1.7,1.65,2.59,3.7,2.59,6.13,0,3.42-2.18,6.57-5.43,7.81l6.21,10.49h-4.95Zm-11.1-22.82v9.03h6.44c2.4,0,4.29-1.99,4.29-4.51s-1.92-4.51-4.29-4.51h-6.44Zm35.05,22.82l-5.77-9.84h-5.3v9.84h-4.48V.48h10.95c2.46,0,4.54.84,6.21,2.55,1.7,1.65,2.59,3.71,2.59,6.14,0,3.43-2.18,6.57-5.43,7.82l6.21,10.5h-4.98Zm-11.07-22.83v9.03h6.44c2.4,0,4.29-1.99,4.29-4.52s-1.92-4.52-4.29-4.52h-6.44ZM190.24.49h4.48v27h-4.48V.49Zm14.26,22.76h12.11v4.23h-16.59V.5h16.4v4.23h-11.92v7h10.95v4.2h-10.95v7.32h0Zm15.24-1.91l3.88-2.24c1.1,3.05,3.34,4.54,6.78,4.54s5.08-1.43,5.08-3.55c0-1.12-.47-1.93-1.36-2.49-.88-.59-2.52-1.24-4.86-1.93-2.62-.78-3.91-1.28-5.74-2.46-1.77-1.24-2.65-3.02-2.65-5.44s.85-4.26,2.59-5.66c1.7-1.43,3.79-2.12,6.21-2.12,4.38,0,7.76,2.24,9.53,5.94l-3.79,2.15c-1.14-2.49-3.06-3.76-5.74-3.76s-4.29,1.31-4.29,3.36,1.32,2.92,5.52,4.2c1.04.34,1.8.59,2.27.78.51.16,1.17.44,2.02.78.88.34,1.58.75,1.99,1.09,1.45,1.12,3,2.95,2.81,5.54,0,2.43-.88,4.39-2.68,5.82-1.77,1.43-4.1,2.12-7,2.12-5.3-.03-9.15-2.52-10.57-6.66h0Z"/>
+                                    <path stroke-width="0" fill="currentColor"
+                                          d="m7.32,27.49L0,.48h4.8l5.63,20.74L16.47.48h4.48s6.05,20.85,6.05,20.85L32.65.49h4.81s-7.33,27-7.33,27h-5.57s-5.85-20.17-5.85-20.17l-5.86,20.17s-5.53,0-5.53,0ZM40.77.5h4.57v26.97h-4.57V.5Zm14.35,22.74h11.14v4.23h-15.62V.5h4.48v22.74ZM80.33.53c3.75,0,6.88,1.31,9.34,3.89,2.49,2.58,3.75,5.79,3.75,9.58s-1.26,6.97-3.75,9.58c-2.46,2.58-5.58,3.89-9.34,3.89h-10.76V.5h10.76v.03h0Zm0,22.74c2.59,0,4.7-.87,6.28-2.61,1.64-1.74,2.46-3.98,2.46-6.63s-.82-4.88-2.46-6.63c-1.61-1.74-3.72-2.61-6.28-2.61h-6.25v18.48h6.25Zm37.22-3.51c0,2.21-.79,4.05-2.4,5.51-1.61,1.46-3.5,2.21-5.84,2.21h-11.7V.5h10.85c2.24,0,4.13.75,5.68,2.15,1.58,1.43,2.33,3.21,2.33,5.32,0,2.37-.95,4.17-2.78,5.51,2.4,1.25,3.85,3.49,3.85,6.29Zm-15.43-15.1v7.1h6.37c1.99,0,3.5-1.56,3.5-3.55s-1.51-3.55-3.5-3.55h-6.37Zm7.22,18.65c2.08,0,3.72-1.65,3.72-3.77s-1.64-3.77-3.72-3.77h-7.22v7.56h7.22v-.03Zm16.94-.06h12.11v4.23h-16.59V.5h16.4v4.23h-11.93v7h10.95v4.2h-10.95v7.32h0Zm31.74,4.23l-5.8-9.84h-5.3v9.84h-4.48V.5h10.95c2.46,0,4.54.84,6.21,2.55,1.7,1.65,2.59,3.7,2.59,6.13,0,3.42-2.18,6.57-5.43,7.81l6.21,10.49h-4.95Zm-11.1-22.82v9.03h6.44c2.4,0,4.29-1.99,4.29-4.51s-1.92-4.51-4.29-4.51h-6.44Zm35.05,22.82l-5.77-9.84h-5.3v9.84h-4.48V.48h10.95c2.46,0,4.54.84,6.21,2.55,1.7,1.65,2.59,3.71,2.59,6.14,0,3.43-2.18,6.57-5.43,7.82l6.21,10.5h-4.98Zm-11.07-22.83v9.03h6.44c2.4,0,4.29-1.99,4.29-4.52s-1.92-4.52-4.29-4.52h-6.44ZM190.24.49h4.48v27h-4.48V.49Zm14.26,22.76h12.11v4.23h-16.59V.5h16.4v4.23h-11.92v7h10.95v4.2h-10.95v7.32h0Zm15.24-1.91l3.88-2.24c1.1,3.05,3.34,4.54,6.78,4.54s5.08-1.43,5.08-3.55c0-1.12-.47-1.93-1.36-2.49-.88-.59-2.52-1.24-4.86-1.93-2.62-.78-3.91-1.28-5.74-2.46-1.77-1.24-2.65-3.02-2.65-5.44s.85-4.26,2.59-5.66c1.7-1.43,3.79-2.12,6.21-2.12,4.38,0,7.76,2.24,9.53,5.94l-3.79,2.15c-1.14-2.49-3.06-3.76-5.74-3.76s-4.29,1.31-4.29,3.36,1.32,2.92,5.52,4.2c1.04.34,1.8.59,2.27.78.51.16,1.17.44,2.02.78.88.34,1.58.75,1.99,1.09,1.45,1.12,3,2.95,2.81,5.54,0,2.43-.88,4.39-2.68,5.82-1.77,1.43-4.1,2.12-7,2.12-5.3-.03-9.15-2.52-10.57-6.66h0Z"/>
                                 </svg>
                             </a>
                         </li>
@@ -1999,15 +2122,19 @@
                     <ul class="nav footer__marketplace__list">
                         <li>
                             <a href="" target="_blank" class="footer__marketplace__min">
-                                <svg width="24" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.71 41.62">
-                                    <path stroke-width="0" fill="currentColor" d="m0,0c.54,26,13.54,41.62,36.33,41.62h1.29v-14.88c8.38.83,14.71,6.96,17.25,14.88h11.83c-3.25-11.83-11.79-18.38-17.13-20.88,5.33-3.08,12.83-10.58,14.62-20.75h-10.75c-2.33,8.25-9.25,15.75-15.83,16.46V0h-10.75v28.83c-6.67-1.67-15.08-9.75-15.46-28.83H0Z"/>
+                                <svg width="24" height="15" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 66.71 41.62">
+                                    <path stroke-width="0" fill="currentColor"
+                                          d="m0,0c.54,26,13.54,41.62,36.33,41.62h1.29v-14.88c8.38.83,14.71,6.96,17.25,14.88h11.83c-3.25-11.83-11.79-18.38-17.13-20.88,5.33-3.08,12.83-10.58,14.62-20.75h-10.75c-2.33,8.25-9.25,15.75-15.83,16.46V0h-10.75v28.83c-6.67-1.67-15.08-9.75-15.46-28.83H0Z"/>
                                 </svg>
                             </a>
                         </li>
                         <li>
                             <a href="" target="_blank" class="footer__marketplace__min">
-                                <svg width="24" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.99 426.67">
-                                    <path stroke-width="0" fill="currentColor" d="m200.9,281.2l-8.47,119.13c12.12,0,17.37-5.21,23.66-11.46l56.81-54.29,117.72,86.21c21.59,12.03,36.8,5.7,42.62-19.86L510.51,38.86l.02-.02c6.85-31.91-11.54-44.39-32.58-36.57L23.77,176.16c-31,12.03-30.53,29.31-5.27,37.14l116.12,36.12L404.33,80.65c12.69-8.41,24.23-3.75,14.74,4.65l-218.18,195.9Z"/>
+                                <svg width="24" height="20" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 511.99 426.67">
+                                    <path stroke-width="0" fill="currentColor"
+                                          d="m200.9,281.2l-8.47,119.13c12.12,0,17.37-5.21,23.66-11.46l56.81-54.29,117.72,86.21c21.59,12.03,36.8,5.7,42.62-19.86L510.51,38.86l.02-.02c6.85-31.91-11.54-44.39-32.58-36.57L23.77,176.16c-31,12.03-30.53,29.31-5.27,37.14l116.12,36.12L404.33,80.65c12.69-8.41,24.23-3.75,14.74,4.65l-218.18,195.9Z"/>
                                 </svg>
                             </a>
                         </li>
@@ -2015,51 +2142,92 @@
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4">
-                <div class="footer__caption">Каталог</div>
-                <ul class="nav d-block footer__nav">
-                    <li><a href="">НОВИНКИ</a></li>
-                    <li><a href="">МИНИ-ВЕРСИИ</a></li>
-                    <li><a href="">ЛИЦО</a></li>
-                    <li><a href="">Глаза</a></li>
-                    <li><a href="">брови</a></li>
-                    <li><a href="">губы</a></li>
-                    <li><a href="">УХОД ЗА КОЖЕЙ</a></li>
-                    <li><a href="">Кисти</a></li>
-                    <li><a href="">РЕСНИЦЫ</a></li>
-                    <li><a href="">АКСЕССУАРЫ И ГИГИЕНА</a></li>
-                    <li><a href="">ЛИМИТИРОВАННЫЕ СЕРИИ</a></li>
-                    <li><a href="">СУМКИ И КОСМЕТИЧКИ</a></li>
-                    <li><a href="">ПОДАРОЧНЫЕ КОРОБКИ</a></li>
-                </ul>
+                <div class="footer__mob-acc">
+                    <div class="footer__caption d-none d-lg-block">Каталог</div>
+                    <div class="footer__caption collapsed d-flex align-items-center justify-content-between d-lg-none" data-bs-toggle="collapse" data-bs-target="#mobNavFooter1">
+                        <span>Каталог</span>
+                        <span>
+                            <svg class="dropdown__line" width="9" height="5">
+                                <use xlink:href="#svg-down"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="accordion-collapse collapse footer__mob-collapse" id="mobNavFooter1">
+                        <ul class="nav d-block footer__nav">
+                            <li><a href="">НОВИНКИ</a></li>
+                            <li><a href="">МИНИ-ВЕРСИИ</a></li>
+                            <li><a href="">ЛИЦО</a></li>
+                            <li><a href="">Глаза</a></li>
+                            <li><a href="">брови</a></li>
+                            <li><a href="">губы</a></li>
+                            <li><a href="">УХОД ЗА КОЖЕЙ</a></li>
+                            <li><a href="">Кисти</a></li>
+                            <li><a href="">РЕСНИЦЫ</a></li>
+                            <li><a href="">АКСЕССУАРЫ И ГИГИЕНА</a></li>
+                            <li><a href="">ЛИМИТИРОВАННЫЕ СЕРИИ</a></li>
+                            <li><a href="">СУМКИ И КОСМЕТИЧКИ</a></li>
+                            <li><a href="">ПОДАРОЧНЫЕ КОРОБКИ</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="col-xl-3 col-lg-4">
-                <div class="footer__caption">ПОкупателям</div>
-                <ul class="nav d-block footer__nav fpad20">
-                    <li><a href="">оплата</a></li>
-                    <li><a href="">доставка</a></li>
-                    <li><a href="">где купить</a></li>
-                    <li><a href="">Узнать статус заказа</a></li>
-                    <li><a href="">Гравировка на кистях</a></li>
-                    <li><a href="">АРЕНДА ОБОРУДОВАНИЯ</a></li>
-                    <li><a href="">Вдохновение</a></li>
-                </ul>
-                <div class="footer__caption">MANLY PRO</div>
-                <ul class="nav d-block footer__nav fpad20">
-                    <li><a href="">О бренде</a></li>
-                    <li><a href="">РАБОТА В MANLY PRO</a></li>
-                    <li><a href="">СОТРУДНИЧЕСТВО</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-                <ul class="nav d-block footer__nav">
-                    <li><a href="">ПРАВОВАЯ ИНФОРМАЦИЯ</a></li>
-                </ul>
+                <div class="footer__mob-acc">
+                    <div class="footer__caption d-none d-lg-block">ПОкупателям</div>
+                    <div class="footer__caption collapsed d-lg-none  d-flex align-items-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#mobNavFooter2">
+                        <span>ПОкупателям</span>
+                        <span>
+                            <svg class="dropdown__line" width="9" height="5">
+                                <use xlink:href="#svg-down"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="accordion-collapse collapse footer__mob-collapse" id="mobNavFooter2">
+                        <ul class="nav d-block footer__nav fpad20 mob-fpad0">
+                            <li><a href="">оплата</a></li>
+                            <li><a href="">доставка</a></li>
+                            <li><a href="">где купить</a></li>
+                            <li><a href="">Узнать статус заказа</a></li>
+                            <li><a href="">Гравировка на кистях</a></li>
+                            <li><a href="">АРЕНДА ОБОРУДОВАНИЯ</a></li>
+                            <li><a href="">Вдохновение</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__mob-acc">
+                    <div class="footer__caption d-none d-lg-block">MANLY PRO</div>
+                    <div class="footer__caption collapsed d-lg-none d-flex align-items-center justify-content-between" data-bs-toggle="collapse" data-bs-target="#mobNavFooter3">
+                        <span>MANLY PRO</span>
+                        <span>
+                            <svg class="dropdown__line" width="9" height="5">
+                                <use xlink:href="#svg-down"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="accordion-collapse collapse footer__mob-collapse" id="mobNavFooter3">
+                        <ul class="nav d-block footer__nav fpad20 mob-fpad0">
+                            <li><a href="">О бренде</a></li>
+                            <li><a href="">РАБОТА В MANLY PRO</a></li>
+                            <li><a href="">СОТРУДНИЧЕСТВО</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                        <ul class="nav d-none d-lg-block footer__nav">
+                            <li><a href="">ПРАВОВАЯ ИНФОРМАЦИЯ</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row footer__bottom">
-            <div class="col-xl-6 col-lg-4">
+            <div class="col-xl-6 col-lg-4 footer__bottom__col-copy">
+                <div class="footer__bottom__col-copy__mob-link">
+                    <ul class="nav d-block footer__nav">
+                        <li><a href="">ПРАВОВАЯ ИНФОРМАЦИЯ</a></li>
+                    </ul>
+                </div>
                 <div class="footer__copy">© MANLY COSMETICS, 2008 —2024</div>
             </div>
-            <div class="col-xl-3 col-lg-4">
+            <div class="col-xl-3 col-lg-4 footer__bottom__web">
                 <div class="footer__webmaster">
                     <a href="https://koti.co/" target="_blank">
                         <div class="ico">
@@ -2079,24 +2247,33 @@
             <div class="col-xl-3 col-lg-4">
                 <ul class="nav footer__payments">
                     <li>
-                        <svg class="d-block" width="51" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59.2 16">
-                            <path fill="currentColor" d="m5.47,0c.53,0,2.1-.14,2.77,2.08.45,1.5,1.16,3.96,2.14,7.37h.4c1.05-3.6,1.77-6.06,2.17-7.37C13.62-.16,15.3,0,15.98,0h5.19v16h-5.29V6.57h-.35l-2.95,9.43h-3.98l-2.95-9.43h-.35v9.43H0V0h5.47Zm23.29,0v9.43h.42l3.59-7.76C33.47.14,34.95,0,34.95,0h5.12v16h-5.4V6.57h-.42l-3.52,7.76c-.7,1.54-2.25,1.68-2.25,1.68h-5.12V0h5.4Zm29.98,7.6c-.75,2.12-3.12,3.63-5.74,3.63h-5.66v4.77h-5.14V7.6h16.54Z"/>
-                            <path fill="currentColor" d="m53.25,0h-11.32c.27,3.56,3.36,6.61,6.57,6.61h10.59C59.71,3.65,57.61,0,53.25,0Z"/>
+                        <svg class="d-block" width="51" height="24" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 59.2 16">
+                            <path fill="currentColor"
+                                  d="m5.47,0c.53,0,2.1-.14,2.77,2.08.45,1.5,1.16,3.96,2.14,7.37h.4c1.05-3.6,1.77-6.06,2.17-7.37C13.62-.16,15.3,0,15.98,0h5.19v16h-5.29V6.57h-.35l-2.95,9.43h-3.98l-2.95-9.43h-.35v9.43H0V0h5.47Zm23.29,0v9.43h.42l3.59-7.76C33.47.14,34.95,0,34.95,0h5.12v16h-5.4V6.57h-.42l-3.52,7.76c-.7,1.54-2.25,1.68-2.25,1.68h-5.12V0h5.4Zm29.98,7.6c-.75,2.12-3.12,3.63-5.74,3.63h-5.66v4.77h-5.14V7.6h16.54Z"/>
+                            <path fill="currentColor"
+                                  d="m53.25,0h-11.32c.27,3.56,3.36,6.61,6.57,6.61h10.59C59.71,3.65,57.61,0,53.25,0Z"/>
                         </svg>
                     </li>
                     <li>
-                        <svg class="d-block" width="45" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 16">
-                            <path fill="currentColor" stroke-width="0" d="m33.62,3.24c1.38-.02,2.39.28,3.16.59l.38.18.57-3.36c-.84-.31-2.15-.65-3.79-.65-4.18,0-7.12,2.1-7.14,5.12-.03,2.23,2.1,3.47,3.7,4.21,1.65.76,2.2,1.24,2.19,1.92-.01,1.04-1.31,1.51-2.53,1.51-1.69,0-2.59-.23-3.98-.81l-.54-.25-.59,3.47c.99.43,2.81.81,4.71.83,4.44,0,7.33-2.08,7.36-5.3.02-1.76-1.11-3.11-3.55-4.21-1.48-.72-2.38-1.2-2.37-1.92,0-.64.77-1.33,2.42-1.33ZM6.61.13c.88.03,1.6.32,1.84,1.26l1.43,6.85C8.47,4.66,5.1,1.68,0,.44L.05.13h6.55Zm14.22.13l-2.64,15.5h4.23L25.05.27h-4.23Zm-6.19.02l-4.14,10.57-.44-1.6c-.82-1.92-3.13-4.69-5.86-6.43l3.79,12.93h4.47S19.11.28,19.11.28h-4.48Zm30.68,0h3.27l3.42,15.49h-3.92s-.39-1.78-.52-2.32c-.33,0-1.69,0-2.97,0-1.14,0-2.22,0-2.45,0-.16.42-.89,2.33-.89,2.33h-4.44l6.28-14.21c.45-1.01,1.2-1.29,2.21-1.29Zm-.26,5.66s-1.34,3.44-1.68,4.33h3.51l-.98-4.48-.28-1.34c-.11.29-.25.66-.36.95-.12.31-.21.55-.2.52Z"/>
+                        <svg class="d-block" width="45" height="14" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 52 16">
+                            <path fill="currentColor" stroke-width="0"
+                                  d="m33.62,3.24c1.38-.02,2.39.28,3.16.59l.38.18.57-3.36c-.84-.31-2.15-.65-3.79-.65-4.18,0-7.12,2.1-7.14,5.12-.03,2.23,2.1,3.47,3.7,4.21,1.65.76,2.2,1.24,2.19,1.92-.01,1.04-1.31,1.51-2.53,1.51-1.69,0-2.59-.23-3.98-.81l-.54-.25-.59,3.47c.99.43,2.81.81,4.71.83,4.44,0,7.33-2.08,7.36-5.3.02-1.76-1.11-3.11-3.55-4.21-1.48-.72-2.38-1.2-2.37-1.92,0-.64.77-1.33,2.42-1.33ZM6.61.13c.88.03,1.6.32,1.84,1.26l1.43,6.85C8.47,4.66,5.1,1.68,0,.44L.05.13h6.55Zm14.22.13l-2.64,15.5h4.23L25.05.27h-4.23Zm-6.19.02l-4.14,10.57-.44-1.6c-.82-1.92-3.13-4.69-5.86-6.43l3.79,12.93h4.47S19.11.28,19.11.28h-4.48Zm30.68,0h3.27l3.42,15.49h-3.92s-.39-1.78-.52-2.32c-.33,0-1.69,0-2.97,0-1.14,0-2.22,0-2.45,0-.16.42-.89,2.33-.89,2.33h-4.44l6.28-14.21c.45-1.01,1.2-1.29,2.21-1.29Zm-.26,5.66s-1.34,3.44-1.68,4.33h3.51l-.98-4.48-.28-1.34c-.11.29-.25.66-.36.95-.12.31-.21.55-.2.52Z"/>
                         </svg>
                     </li>
                     <li>
-                        <svg width="30" height="18" class="d-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 19.2">
-                            <path fill="currentColor" stroke-width="0" d="m15.1,17.36c.1.1.2.1.2.19-1.6.97-3.5,1.65-5.5,1.65C4.4,19.2,0,14.93,0,9.6S4.4,0,9.9,0c2,0,3.9.58,5.5,1.55-.1.1-.2.1-.2.19-2.3,1.94-3.7,4.85-3.7,7.76s1.3,5.92,3.6,7.85ZM22.1,0c-2,0-3.9.58-5.5,1.55.1.1.2.1.2.19,2.3,1.94,3.7,4.85,3.7,7.76s-1.3,5.82-3.7,7.76c-.1.1-.2.1-.2.19,1.6.97,3.4,1.65,5.5,1.65,5.5,0,9.9-4.27,9.9-9.6S27.6,0,22.1,0Zm-6.1,2.04c-.1.1-.3.19-.4.29-2.1,1.75-3.4,4.36-3.4,7.27s1.3,5.43,3.4,7.27c.1.1.2.19.4.29.1-.1.3-.19.4-.29,2.1-1.75,3.4-4.36,3.4-7.27s-1.3-5.43-3.4-7.27c-.1-.1-.3-.19-.4-.29Z"/>
+                        <svg width="30" height="18" class="d-block" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 32 19.2">
+                            <path fill="currentColor" stroke-width="0"
+                                  d="m15.1,17.36c.1.1.2.1.2.19-1.6.97-3.5,1.65-5.5,1.65C4.4,19.2,0,14.93,0,9.6S4.4,0,9.9,0c2,0,3.9.58,5.5,1.55-.1.1-.2.1-.2.19-2.3,1.94-3.7,4.85-3.7,7.76s1.3,5.92,3.6,7.85ZM22.1,0c-2,0-3.9.58-5.5,1.55.1.1.2.1.2.19,2.3,1.94,3.7,4.85,3.7,7.76s-1.3,5.82-3.7,7.76c-.1.1-.2.1-.2.19,1.6.97,3.4,1.65,5.5,1.65,5.5,0,9.9-4.27,9.9-9.6S27.6,0,22.1,0Zm-6.1,2.04c-.1.1-.3.19-.4.29-2.1,1.75-3.4,4.36-3.4,7.27s1.3,5.43,3.4,7.27c.1.1.2.19.4.29.1-.1.3-.19.4-.29,2.1-1.75,3.4-4.36,3.4-7.27s-1.3-5.43-3.4-7.27c-.1-.1-.3-.19-.4-.29Z"/>
                         </svg>
                     </li>
                     <li>
-                       <svg width="32" height="18" class="d-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.47 24">
-                            <path fill-rule="evenodd" fill="currentColor" stroke-width="0" d="m11.19,5.19l.02,6.87,8.32,5.08h0l-11.24,6.86.66-1.17-.66,1.17v-10.28S0,18.77,0,18.77h0,0s0-13.55,0-13.55l8.28,5.05V0l11.26,6.85h0l-8.33,5.08v-3.41l2.73-1.67h0l-2.75-1.67Zm-1.58,9.31l-1.32-.79h.01s1.31.79,1.31.79Zm-6.69-4.09l2.59,1.58-2.59,1.58v-3.17Zm8.29,8.38l2.73-1.65h0l-2.73-1.67v3.32Zm23.99-5.5c0,1.74-1.4,2.89-3.28,2.89s-3.37-1.22-3.37-3.98c0-2.37,1.46-4.32,3.61-4.36.94,0,2.97-.05,2.97-.05l-.91,1.74s-1.62,0-1.83,0c-.93,0-1.78.73-1.89,1.72.49-.48,1.15-.76,1.95-.76,1.72,0,2.76,1.1,2.76,2.78Zm-2.09,0c0-.78-.48-1.24-1.18-1.24s-1.21.47-1.21,1.25c0,.74.48,1.27,1.21,1.27.75,0,1.18-.58,1.18-1.29Zm9.36,2.68v-5.87h0s-6.23,0-6.23,0v5.87h2.1v-4.12h2.03v4.12h2.1Zm-15.63-1.96s-.5.29-1.24.34c-.85.03-1.61-.51-1.61-1.46s.67-1.46,1.59-1.46c.56,0,1.31.39,1.31.39,0,0,.55-1,.83-1.5-.52-.39-1.21-.61-2.01-.61-2.03,0-3.6,1.32-3.6,3.17s1.48,3.16,3.6,3.12c.59-.02,1.41-.23,1.91-.55l-.78-1.43Z"/>
+                        <svg width="32" height="18" class="d-block" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 42.47 24">
+                            <path fill-rule="evenodd" fill="currentColor" stroke-width="0"
+                                  d="m11.19,5.19l.02,6.87,8.32,5.08h0l-11.24,6.86.66-1.17-.66,1.17v-10.28S0,18.77,0,18.77h0,0s0-13.55,0-13.55l8.28,5.05V0l11.26,6.85h0l-8.33,5.08v-3.41l2.73-1.67h0l-2.75-1.67Zm-1.58,9.31l-1.32-.79h.01s1.31.79,1.31.79Zm-6.69-4.09l2.59,1.58-2.59,1.58v-3.17Zm8.29,8.38l2.73-1.65h0l-2.73-1.67v3.32Zm23.99-5.5c0,1.74-1.4,2.89-3.28,2.89s-3.37-1.22-3.37-3.98c0-2.37,1.46-4.32,3.61-4.36.94,0,2.97-.05,2.97-.05l-.91,1.74s-1.62,0-1.83,0c-.93,0-1.78.73-1.89,1.72.49-.48,1.15-.76,1.95-.76,1.72,0,2.76,1.1,2.76,2.78Zm-2.09,0c0-.78-.48-1.24-1.18-1.24s-1.21.47-1.21,1.25c0,.74.48,1.27,1.21,1.27.75,0,1.18-.58,1.18-1.29Zm9.36,2.68v-5.87h0s-6.23,0-6.23,0v5.87h2.1v-4.12h2.03v4.12h2.1Zm-15.63-1.96s-.5.29-1.24.34c-.85.03-1.61-.51-1.61-1.46s.67-1.46,1.59-1.46c.56,0,1.31.39,1.31.39,0,0,.55-1,.83-1.5-.52-.39-1.21-.61-2.01-.61-2.03,0-3.6,1.32-3.6,3.17s1.48,3.16,3.6,3.12c.59-.02,1.41-.23,1.91-.55l-.78-1.43Z"/>
                         </svg>
                     </li>
                 </ul>
@@ -2212,9 +2389,26 @@
             <path stroke-width="0" fill="currentColor" d="m4.65,443.33c6.24,6.25,16.38,6.26,22.63.01,0,0,0,0,.01-.01l196.64-196.64,196.72,196.64c6.25,6.25,16.39,6.25,22.64,0,6.25-6.25,6.25-16.39,0-22.64l-196.72-196.64L443.21,27.33c6.25-6.25,6.25-16.39,0-22.64-6.25-6.25-16.39-6.25-22.64,0h0l-196.64,196.72L27.21,4.77C20.5-.98,10.4-.2,4.65,6.51-.48,12.5-.48,21.34,4.65,27.33l196.64,196.72L4.65,420.77c-6.2,6.24-6.2,16.32,0,22.56h0Z"/>
         </symbol>
 
-        <svg id="svg-close2" viewBox="0 0 311.16 311.19">
+        <symbol id="svg-close2" viewBox="0 0 311.16 311.19">
             <path stroke-width="0" fill="currentColor" d="m6.26,274.77c-8.33,8.33-8.33,21.84,0,30.17s21.84,8.33,30.17,0l119.15-119.17,119.16,119.16c8.33,8.33,21.84,8.33,30.17,0s8.33-21.84,0-30.17l-119.16-119.16,119.16-119.18c8.33-8.33,8.33-21.84,0-30.17-8.33-8.33-21.84-8.33-30.17,0l-119.15,119.17L36.42,6.26C28.09-2.07,14.58-2.07,6.25,6.26c-8.33,8.33-8.33,21.84,0,30.17l119.17,119.17L6.26,274.77Z"/>
-        </svg>
+        </symbol>
+
+        <symbol id="svg-phone" viewBox="0 0 24.29 24.38">
+            <path stroke="currentColor" stroke-miterlimit="10" stroke-width="0.5px" d="m5.07,16.12c2.36,2.82,5.19,5.03,8.43,6.6,1.23.58,2.88,1.28,4.72,1.4.11,0,.22,0,.34,0,1.23,0,2.22-.43,3.03-1.3,0,0,.01-.01.02-.02.29-.35.61-.66.95-.99.23-.22.47-.46.7-.69,1.05-1.1,1.05-2.49,0-3.56l-2.97-2.97c-.5-.52-1.11-.8-1.74-.8s-1.24.28-1.76.8l-1.77,1.77c-.16-.09-.33-.18-.49-.26-.2-.1-.38-.19-.54-.3-1.61-1.02-3.08-2.36-4.48-4.08-.71-.9-1.18-1.65-1.51-2.41.47-.42.9-.86,1.32-1.29.15-.15.3-.31.46-.46.53-.53.82-1.15.82-1.78s-.28-1.25-.82-1.78l-1.47-1.47c-.17-.17-.34-.34-.5-.51-.33-.34-.67-.68-1-.99-.51-.5-1.11-.76-1.74-.76s-1.23.26-1.76.77l-1.85,1.85c-.67.67-1.05,1.49-1.13,2.43-.09,1.18.12,2.44.69,3.96.87,2.35,2.17,4.53,4.11,6.86ZM1.48,5.41c.06-.66.31-1.21.79-1.68l1.84-1.84c.29-.28.6-.42.91-.42s.61.14.89.43c.33.31.64.63.98.97.17.17.34.35.51.52l1.47,1.47c.31.31.47.62.47.93s-.16.62-.47.93c-.15.15-.31.31-.46.47-.46.47-.89.91-1.37,1.33l-.02.02c-.41.41-.35.8-.25,1.1,0,.01,0,.02.01.04.38.92.91,1.79,1.74,2.83,1.48,1.83,3.05,3.25,4.77,4.34.21.14.44.25.65.36.2.1.38.19.54.3.02,0,.03.02.05.03.16.08.32.12.48.12.4,0,.65-.25.74-.34l1.85-1.85c.29-.29.6-.44.91-.44.38,0,.68.23.88.44l2.98,2.98c.59.59.59,1.24-.01,1.87-.21.22-.43.44-.66.66-.35.34-.71.68-1.03,1.07-.57.61-1.25.9-2.12.9-.08,0-.17,0-.26,0-1.62-.1-3.13-.74-4.27-1.28-3.08-1.49-5.78-3.6-8.02-6.28-1.85-2.22-3.09-4.29-3.91-6.51-.51-1.36-.7-2.45-.62-3.45Z"/>
+        </symbol>
+
+        <symbol id="svg-send" viewBox="0 0 492 409.31">
+            <path stroke-width="0" fill="currentColor"  d="m484.14,185.54L306.46,7.86c-5.07-5.07-11.83-7.86-19.04-7.86s-13.97,2.79-19.04,7.86l-16.13,16.14c-5.07,5.06-7.86,11.83-7.86,19.04s2.79,14.2,7.86,19.26l103.66,103.88H26.58c-14.85,0-26.58,11.62-26.58,26.48v22.81c0,14.85,11.73,27.65,26.58,27.65h330.5l-104.83,104.46c-5.07,5.07-7.86,11.65-7.86,18.86s2.79,13.88,7.86,18.95l16.13,16.08c5.07,5.07,11.83,7.84,19.04,7.84s13.97-2.8,19.04-7.87l177.68-177.68c5.08-5.09,7.88-11.88,7.86-19.1.02-7.24-2.78-14.04-7.86-19.12Z"/>
+        </symbol>
+
+        <symbol id="svg-cat" viewBox="0 0 458.19 458.25">
+            <path stroke-width="0" fill="currentColor" fill-rule="evenodd" d="m65.87,0h77.43C152.15,0,159.58,0,165.66.5c6.36.52,12.4,1.65,18.14,4.57,8.75,4.46,15.86,11.57,20.31,20.31,2.92,5.74,4.05,11.78,4.57,18.14.5,6.08.5,13.51.5,22.36v77.43c0,8.84,0,16.27-.5,22.36-.52,6.36-1.65,12.4-4.57,18.14-4.46,8.75-11.57,15.86-20.31,20.31-5.74,2.92-11.78,4.05-18.14,4.57-6.08.5-13.51.5-22.36.5h-77.43c-8.84,0-16.27,0-22.36-.5-6.36-.52-12.4-1.65-18.14-4.57-8.75-4.46-15.86-11.57-20.31-20.31-2.92-5.74-4.05-11.78-4.57-18.14-.5-6.08-.5-13.51-.5-22.36v-77.43c0-8.84,0-16.27.5-22.36.52-6.36,1.65-12.4,4.57-18.14,4.46-8.75,11.57-15.86,20.31-20.31C31.12,2.14,37.16,1.02,43.52.5,49.6,0,57.03,0,65.87,0Zm-20.19,26.97c-4.72.39-6.87,1.07-8.24,1.76-3.75,1.91-6.8,4.96-8.71,8.71-.7,1.37-1.38,3.52-1.76,8.24-.4,4.87-.41,11.21-.41,20.73v76.36c0,9.52.01,15.86.41,20.73.39,4.72,1.07,6.87,1.76,8.24,1.91,3.75,4.96,6.8,8.71,8.71,1.37.7,3.52,1.38,8.24,1.76,4.87.4,11.21.41,20.73.41h76.37c9.52,0,15.86-.01,20.73-.41,4.72-.38,6.87-1.07,8.24-1.76,3.75-1.91,6.8-4.96,8.71-8.71.7-1.37,1.38-3.52,1.76-8.24.4-4.87.41-11.21.41-20.73v-76.36c0-9.52-.01-15.86-.41-20.73-.39-4.72-1.07-6.87-1.76-8.24-1.91-3.75-4.96-6.8-8.71-8.71-1.37-.7-3.52-1.38-8.24-1.76-4.87-.4-11.21-.41-20.73-.41h-76.37c-9.52,0-15.86.01-20.73.41Z"/>
+            <path stroke-width="0" fill="currentColor" fill-rule="evenodd" d="m65.87,249.08h77.43c8.84,0,16.27,0,22.36.5,6.36.52,12.4,1.65,18.14,4.57,8.75,4.46,15.86,11.57,20.31,20.31,2.92,5.74,4.05,11.78,4.57,18.14.5,6.08.5,13.51.5,22.36v77.43c0,8.84,0,16.27-.5,22.36-.52,6.36-1.65,12.4-4.57,18.14-4.46,8.75-11.57,15.86-20.31,20.31-5.74,2.92-11.78,4.05-18.14,4.57-6.08.5-13.51.5-22.36.5h-77.43c-8.84,0-16.27,0-22.36-.5-6.36-.52-12.4-1.65-18.14-4.57-8.75-4.46-15.86-11.57-20.31-20.31-2.92-5.74-4.05-11.78-4.57-18.14-.5-6.08-.5-13.51-.5-22.36v-77.43c0-8.84,0-16.27.5-22.36.52-6.36,1.65-12.4,4.57-18.14,4.46-8.75,11.57-15.86,20.31-20.31,5.74-2.92,11.78-4.05,18.14-4.57,6.08-.5,13.51-.5,22.36-.5Zm-20.19,26.97c-4.72.39-6.87,1.07-8.24,1.76-3.75,1.91-6.8,4.96-8.71,8.71-.7,1.37-1.38,3.52-1.76,8.24-.4,4.87-.41,11.21-.41,20.73v76.36c0,9.52.01,15.86.41,20.73.39,4.72,1.07,6.87,1.76,8.24,1.91,3.75,4.96,6.8,8.71,8.71,1.37.7,3.52,1.38,8.24,1.76,4.87.4,11.21.41,20.73.41h76.37c9.52,0,15.86-.01,20.73-.41,4.72-.39,6.87-1.07,8.24-1.76,3.75-1.91,6.8-4.96,8.71-8.71.7-1.37,1.38-3.52,1.76-8.24.4-4.87.41-11.21.41-20.73v-76.36c0-9.52-.01-15.86-.41-20.73-.39-4.72-1.07-6.87-1.76-8.24-1.91-3.75-4.96-6.8-8.71-8.71-1.37-.7-3.52-1.38-8.24-1.76-4.87-.4-11.21-.41-20.73-.41h-76.37c-9.52,0-15.86.01-20.73.41Z"/>
+            <path stroke-width="0" fill="currentColor" fill-rule="evenodd" d="m314.89,0h77.43C401.16,0,408.6,0,414.68.5c6.36.52,12.4,1.65,18.14,4.57,8.75,4.46,15.86,11.57,20.31,20.31,2.92,5.74,4.05,11.78,4.57,18.14.5,6.08.5,13.51.5,22.36v77.43c0,8.84,0,16.27-.5,22.36-.52,6.36-1.65,12.4-4.57,18.14-4.46,8.75-11.57,15.86-20.31,20.31-5.74,2.92-11.78,4.05-18.14,4.57-6.08.5-13.51.5-22.36.5h-77.43c-8.84,0-16.27,0-22.36-.5-6.36-.52-12.4-1.65-18.14-4.57-8.75-4.46-15.86-11.57-20.31-20.31-2.92-5.74-4.05-11.78-4.57-18.14-.5-6.08-.5-13.51-.5-22.36v-77.43c0-8.84,0-16.27.5-22.36.52-6.36,1.65-12.4,4.57-18.14,4.46-8.75,11.57-15.86,20.31-20.31,5.74-2.92,11.78-4.05,18.14-4.57C298.61,0,306.04,0,314.89,0Zm-20.19,26.97c-4.72.39-6.87,1.07-8.24,1.76-3.75,1.91-6.8,4.96-8.71,8.71-.7,1.37-1.38,3.52-1.76,8.24-.4,4.87-.41,11.21-.41,20.73v76.36c0,9.52.01,15.86.41,20.73.38,4.72,1.07,6.87,1.76,8.24,1.91,3.75,4.96,6.8,8.71,8.71,1.37.7,3.52,1.38,8.24,1.76,4.87.4,11.21.41,20.73.41h76.37c9.52,0,15.86-.01,20.73-.41,4.72-.38,6.87-1.07,8.24-1.76,3.75-1.91,6.8-4.96,8.71-8.71.7-1.37,1.38-3.52,1.76-8.24.4-4.87.41-11.21.41-20.73v-76.36c0-9.52-.01-15.86-.41-20.73-.39-4.72-1.07-6.87-1.76-8.24-1.91-3.75-4.96-6.8-8.71-8.71-1.37-.7-3.52-1.38-8.24-1.76-4.87-.4-11.21-.41-20.73-.41h-76.37c-9.52,0-15.86.01-20.73.41Z"/>
+            <path stroke-width="0" fill="currentColor" fill-rule="evenodd" d="m249.02,353.67c0-7.33,5.95-13.28,13.28-13.28h182.61c7.33,0,13.28,5.95,13.28,13.28s-5.95,13.28-13.28,13.28h-182.61c-7.33,0-13.28-5.95-13.28-13.28Z"/>
+            <path stroke-width="0" fill="currentColor" fill-rule="evenodd" d="m249.02,280.74c0-7.33,5.95-13.28,13.28-13.28h182.61c7.33,0,13.28,5.95,13.28,13.28s-5.95,13.28-13.28,13.28h-182.61c-7.33,0-13.28-5.95-13.28-13.28Z"/>
+            <path stroke-width="0" fill="currentColor" fill-rule="evenodd" d="m249.02,426.6c0-7.33,5.95-13.28,13.28-13.28h182.61c7.33,0,13.28,5.95,13.28,13.28s-5.95,13.28-13.28,13.28h-182.61c-7.33,0-13.28-5.95-13.28-13.28Z"/>
+        </symbol>
     </svg>
 </div>
 
