@@ -1481,7 +1481,54 @@ button:hover {
   align-items: center;
 }
 
+.offcanvas.offcanvas-start {
+  border-right: none;
+}
+
+.offcanvas-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 13px 20px;
+}
+.offcanvas-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  color: #4e1498;
+}
+button.close {
+  border: none;
+  padding: 0;
+  background: transparent;
+  color: #000;
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+.offcanvas-body {
+  padding: 0 13px 30px;
+  overflow: hidden;
+  .header__middle__menu__level1 a {
+    padding-left: 0;
+    padding-right: 6px;
+  }
+}
+.tpad40 {
+  padding-top: 40px;
+}
+.offcanvas-header__back {
+  padding-right: 15px;
+  color: #000;
+}
+
 @media (min-width: 1199px) {
+
   .fix_menu {
     .header__middle__wrap {
       position: fixed;
@@ -1519,8 +1566,68 @@ button:hover {
     font-size: 38px;
   }
 }
+.header__search-not {
+  padding-top: 25px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.cookie {
+  position: fixed;
+  z-index: 30;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    border-radius: 10px;
+    background: #fff;
+    position: relative;
+    z-index: 30;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  &__ico {
+    min-width: 110px;
+    display: flex;
+    justify-content: center;
+  }
+  &__desc {
+    flex-grow: 1;
+    font-size: 12px;
+    line-height: 18px;
+    a {
+      color: #000;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &__btn {
+    min-width: 160px;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 @media (max-width: 1199px) {
+  .header__middle__ico-menu>li>a {
+    min-width: 50px;
+  }
+  .header__middle__ico-menu {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .header__middle__menu__level1 a {
+    max-width: 100%;
+  }
+  .header__middle__menu__level1 a.active,
+  .header__middle__menu__level1 a:hover {
+    background: transparent;
+    color: #000;
+  }
   .header__middle__ico-menu__pc-lk {
     display: none;
   }
@@ -1653,7 +1760,7 @@ button:hover {
       height: auto;
       padding: 10px 0;
       position: fixed;
-      z-index: 100;
+      z-index: 50;
       bottom: 0;
       left: 0;
       right: 0;
@@ -1680,7 +1787,7 @@ button:hover {
   }
   .header__middle__menu__wrap {
     padding: 0 0 30px;
-    max-height: calc(100vh - 90px);
+    max-height: calc(100vh - 52px);
     overflow-x: hidden;
     overflow-y: auto;
   }
@@ -1711,6 +1818,20 @@ button:hover {
       text-align: center;
     }
   }
+  .cabinet-active {
+    position: absolute;
+    z-index: 10;
+    top: -4px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    background: var(--color-violet);
+    border-radius: 5px;
+  }
+  .cookie {
+    bottom: 80px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1720,6 +1841,38 @@ button:hover {
 }
 
 @media (max-width: 991px) {
+  .header__search-not {
+    padding-top: 15px;
+    font-size: 12px;
+  }
+  .header__search-res__footer .btn {
+    height: 36px;
+    font-size: 10px;
+    width: 230px;
+  }
+  .header__search-form__inp {
+    height: 46px;
+    font-size: 13px;
+  }
+  .product-search__desc {
+    padding-left: 16px;
+    .product-tips {
+      padding-bottom: 5px;
+    }
+  }
+  .product-search__title {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+  .product-search {
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+  .product-search__img {
+    min-width: 64px;
+    width: 64px;
+    height: 64px;
+  }
   .footer__bottom__col-copy {
     order: 2;
   }
@@ -1844,9 +1997,26 @@ button:hover {
       margin-bottom: 15px;
     }
   }
+
 }
 
 @media (max-width: 768px) {
+  .cookie__wrap {
+    text-align: center;
+    flex-direction: column;
+    padding: 20px 15px;
+  }
+  .cookie__ico {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .cookie__btn {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .cookie__desc {
+    font-size: 11px;
+  }
   .footer__caption {
     font-size: 12px;
     line-height: 1;

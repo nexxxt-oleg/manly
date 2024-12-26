@@ -55,7 +55,7 @@
                     <div class="container ">
                         <ul class="nav d-block header__middle__menu__level1 header__mob-menu__nav">
                             <li>
-                                <a href="" class="">
+                                <a href="#mobMenuCat" data-bs-toggle="modal" data-bs-target="#mobMenuCat">
                                     <span>КАТАЛОГ</span>
                                     <svg width="5" height="8">
                                         <use xlink:href="#svg-right"></use>
@@ -248,7 +248,7 @@
                             <div class="col-xl-5">
                                 <ul class="nav header__middle__ico-menu">
                                     <li class="header__middle__ico-menu__mob-nav">
-                                        <a href="">
+                                        <a href="#mobSearch" data-bs-toggle="modal" data-bs-target="#mobSearch">
                                             <div class="header__middle__ico-menu__wrap">
                                                 <svg width="20" height="20" class="search-open">
                                                     <use xlink:href="#svg-search"></use>
@@ -296,6 +296,7 @@
                                     <li class="header__middle__ico-menu__mob-nav">
                                         <a href="">
                                             <div class="header__middle__ico-menu__wrap">
+                                                <span class="cabinet-active"></span>
                                                 <svg width="20" height="20">
                                                     <use xlink:href="#svg-user"></use>
                                                 </svg>
@@ -304,7 +305,17 @@
                                         </a>
                                     </li>
                                     <li class="header__middle__ico-menu__pc-lk">
-                                        <div class="dropdown header__middle__lk">
+                                        <a href="">
+                                            <div class="header__middle__ico-menu__wrap">
+
+                                                <svg width="20" height="20">
+                                                    <use xlink:href="#svg-user"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="header__middle__ico-menu__mob-caption">Кабинет</div>
+                                        </a>
+
+                                        <!--div class="dropdown header__middle__lk">
                                             <a href="" data-bs-toggle="dropdown">
                                                 <svg width="20" height="20">
                                                     <use xlink:href="#svg-user"></use>
@@ -321,10 +332,10 @@
                                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                                             </ul>
-                                        </div>
+                                        </div-->
                                     </li>
                                     <li class="header__middle__ico-menu__mob-nav">
-                                        <a href="">
+                                        <a href="#mobMenuCat" data-bs-toggle="modal" data-bs-target="#mobMenuCat">
                                             <div class="header__middle__ico-menu__wrap">
                                                 <svg width="20" height="20">
                                                     <use xlink:href="#svg-cat"></use>
@@ -628,6 +639,266 @@
 
 
     </header>
+
+    <div class="modal fade" tabindex="-1" id="mobMenuCat">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+            <div class="modal-content p-0 mob-menu-modal">
+                <div class="container p-0">
+                    <div class="offcanvas-header">
+                        <div class="offcanvas-title">КАТАЛОГ</div>
+                        <button class="close" data-bs-dismiss="modal">
+                            <svg width="14" height="14">
+                                <use xlink:href="#svg-close2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav d-block header__middle__menu__level1 header__mob-menu__nav">
+                            <li>
+                                <a href="">НОВИНКИ</a>
+                            </li>
+                            <li>
+                                <a href="">MUST HAVE</a>
+                            </li>
+                            <li>
+                                <a href="">СКИДКИ%</a>
+                            </li>
+                            <li class="line"></li>
+                            <li>
+                                <a href="">Мини-версии</a>
+                            </li>
+                            <li>
+                                <a href="#mobSubMenu_1" data-bs-toggle="offcanvas" data-bs-target="#mobSubMenu_1">
+                                    <span>Лицо</span>
+                                    <svg width="5" height="8">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                                <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="mobSubMenu_1">
+                                    <div class="container p-0">
+                                        <div class="offcanvas-header">
+                                            <div class="d-flex align-items-center">
+                                                <div class="offcanvas-header__back" data-bs-dismiss="offcanvas"
+                                                     aria-label="Close">
+                                                    <svg width="7" height="12">
+                                                        <use xlink:href="#svg-left2"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="offcanvas-title">Лицо</div>
+                                            </div>
+                                            <button class="close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                                <svg width="14" height="14">
+                                                    <use xlink:href="#svg-close2"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <ul class="nav d-block header__middle__menu__level1 header__mob-menu__nav">
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li class="tpad40">
+                                                    <a href="">Смотреть все категории</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#mobSubMenu_1" data-bs-toggle="offcanvas" data-bs-target="#mobSubMenu_2">
+                                    <span>Глаза</span>
+                                    <svg width="5" height="8">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                                <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="mobSubMenu_2">
+                                    <div class="container p-0">
+                                        <div class="offcanvas-header">
+                                            <div class="d-flex align-items-center">
+                                                <div class="offcanvas-header__back" data-bs-dismiss="offcanvas"
+                                                     aria-label="Close">
+                                                    <svg width="7" height="12">
+                                                        <use xlink:href="#svg-left2"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="offcanvas-title">Глаза</div>
+                                            </div>
+                                            <button class="close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                                <svg width="14" height="14">
+                                                    <use xlink:href="#svg-close2"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <ul class="nav d-block header__middle__menu__level1 header__mob-menu__nav">
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li class="tpad40">
+                                                    <a href="">Смотреть все категории</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Брови</span>
+                                    <svg width="5" height="8">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Губы</span>
+                                    <svg width="5" height="8">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="mobSearch">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+            <div class="modal-content p-0">
+                <div class="container p-0">
+                    <div class="offcanvas-header">
+                        <div class="offcanvas-title">ПОИСК</div>
+                        <button class="close" data-bs-dismiss="modal">
+                            <svg width="14" height="14">
+                                <use xlink:href="#svg-close2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-6 col-lg-8">
+                                <div class="header__search-form">
+                                    <input class="header__search-form__inp" type="text" required="" placeholder="я ищу">
+                                    <span class="header__search-form__clear">
+                                             <svg width="12" height="12">
+                                                <use xlink:href="#svg-close2"></use>
+                                            </svg>
+                                        </span>
+                                    <button type="submit" class="header__search-form__submit">
+                                        <svg width="20" height="20">
+                                            <use xlink:href="#svg-search"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="header__search-not">
+                                    К сожалению, на ваш поисковый запроc ничего не найдено.
+                                </div>
+                                <div class="header__search-res">
+                                    <a href="" class="header__search-res__item product-search">
+                                        <div class="product-search__img">
+                                            <picture>
+                                                <source srcset="images/dist/lot1.jpg 1x, images/dist/lot1@2.jpg 2x">
+                                                <img src="images/dist/lot1.jpg" alt="" width="110" height="110">
+                                            </picture>
+                                        </div>
+                                        <div class="product-search__desc">
+                                            <ul class="nav  product-tips product-search__tips">
+                                                <li>
+                                                    <span class="product-tips__item product-tips__item--must-have">MUST HAVE</span>
+                                                </li>
+                                            </ul>
+                                            <div class="product-search__title">
+                                                Стойкий
+                                                высокопигментированный
+                                                консилер
+                                            </div>
+                                            <div class="product-search__cost">
+                                                <div class="prices">
+                                                    <div class="price price--old">1860 <span class="rur">q</span>
+                                                    </div>
+                                                    <div class="price price--hot">1395 <span class="rur">q</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="header__search-res__item product-search">
+                                        <div class="product-search__img">
+                                            <picture>
+                                                <source srcset="images/dist/lot1.jpg 1x, images/dist/lot1@2.jpg 2x">
+                                                <img src="images/dist/lot1.jpg" alt="" width="110" height="110">
+                                            </picture>
+                                        </div>
+                                        <div class="product-search__desc">
+
+                                            <div class="product-search__title">
+                                                Стойкий
+                                                высокопигментированный
+                                                консилер
+                                                Стойкий
+                                                высокопигментированный
+                                                консилер
+                                            </div>
+                                            <div class="product-search__cost">
+                                                <div class="prices">
+
+                                                    <div class="price price--hot">1395 <span class="rur">q</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="header__search-res__footer">
+                                        <a href="" class="btn btn--bay">ПОКАЗАТЬ ВСЕ РЕЗУЛЬТАТЫ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 <div class="container ">
@@ -2041,6 +2312,30 @@
 </div>
 
 
+<div id="cookie" class="cookie">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="cookie__wrap">
+                    <div class="cookie__ico">
+                        <img src="images/dist/cookie.svg" class="d-block" width="48" height="48" alt="">
+                    </div>
+                    <div class="cookie__desc">
+                        Мы используем <a href="">cookie</a> файлы, чтобы адаптировать предложения в соответствии с вашими потребностями
+                        и обеспечить максимальное удобство при взаимодействии с сайтом. Продолжая пользоваться сайтом,
+                        вы соглашаетесь с использованием cookie файлов. <a href="">Подробнее о хранении и использовании
+                        персональных данных</a>
+                    </div>
+                    <div class="cookie__btn">
+                        <button class="btn btn--bay" onclick="document.getElementById('cookie').remove()">ПРИНЯТЬ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="form-send">
     <div class="container">
         <div class="row align-items-center">
@@ -2385,6 +2680,10 @@
             <path stroke-width="0" fill="currentColor" d="m176,0c4.09,0,8.19,1.56,11.31,4.69,6.25,6.25,6.25,16.38,0,22.62L38.63,176l148.69,148.69c6.25,6.25,6.25,16.38,0,22.62s-16.38,6.25-22.62,0L4.69,187.31c-6.25-6.25-6.25-16.38,0-22.62L164.69,4.69C167.81,1.56,171.91,0,176,0h0Z"/>
         </symbol>
 
+        <symbol id="svg-left2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.05 492">
+            <path stroke-width="0" fill="currentColor" d="m7.85,265.2l218.95,218.94c5.06,5.07,11.82,7.86,19.03,7.86s13.97-2.79,19.03-7.86l16.12-16.12c10.49-10.5,10.49-27.58,0-38.06L97.13,246.1,281.19,62.04c5.06-5.07,7.86-11.82,7.86-19.03s-2.8-13.97-7.86-19.04l-16.12-16.12c-5.07-5.07-11.82-7.86-19.03-7.86s-13.97,2.79-19.03,7.86L7.85,227C2.77,232.09-.02,238.88,0,246.09c-.02,7.24,2.77,14.03,7.85,19.11Z"/>
+        </symbol>
+
         <symbol id="svg-close" viewBox="0 0 447.98 448.02">
             <path stroke-width="0" fill="currentColor" d="m4.65,443.33c6.24,6.25,16.38,6.26,22.63.01,0,0,0,0,.01-.01l196.64-196.64,196.72,196.64c6.25,6.25,16.39,6.25,22.64,0,6.25-6.25,6.25-16.39,0-22.64l-196.72-196.64L443.21,27.33c6.25-6.25,6.25-16.39,0-22.64-6.25-6.25-16.39-6.25-22.64,0h0l-196.64,196.72L27.21,4.77C20.5-.98,10.4-.2,4.65,6.51-.48,12.5-.48,21.34,4.65,27.33l196.64,196.72L4.65,420.77c-6.2,6.24-6.2,16.32,0,22.56h0Z"/>
         </symbol>
@@ -2409,6 +2708,81 @@
             <path stroke-width="0" fill="currentColor" fill-rule="evenodd" d="m249.02,280.74c0-7.33,5.95-13.28,13.28-13.28h182.61c7.33,0,13.28,5.95,13.28,13.28s-5.95,13.28-13.28,13.28h-182.61c-7.33,0-13.28-5.95-13.28-13.28Z"/>
             <path stroke-width="0" fill="currentColor" fill-rule="evenodd" d="m249.02,426.6c0-7.33,5.95-13.28,13.28-13.28h182.61c7.33,0,13.28,5.95,13.28,13.28s-5.95,13.28-13.28,13.28h-182.61c-7.33,0-13.28-5.95-13.28-13.28Z"/>
         </symbol>
+
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg id="svg2985" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 682.67 682.67">
+            <defs>
+                <style>
+                    .cls-1 {
+                        stroke: #4e1498;
+                    }
+
+                    .cls-1, .cls-2, .cls-3 {
+                        fill: none;
+                    }
+
+                    .cls-1, .cls-3 {
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 26.67px;
+                    }
+
+                    .cls-4 {
+                        fill-rule: evenodd;
+                    }
+
+                    .cls-4, .cls-2 {
+                        stroke-width: 0px;
+                    }
+
+                    .cls-3 {
+                        stroke: #000;
+                    }
+                </style>
+            </defs>
+            <rect class="cls-2" x="0" y="0" width="682.67" height="682.67"/>
+            <g id="g2995">
+                <g id="g3001">
+                    <path id="path3003" class="cls-3" d="m365.41,19.26l38.35,20.24,36.84-4.67c18.18-2.3,35.35,5.16,46.24,18.29l.1-.08,27.68,33.36,35.67,9.75c17.7,4.82,30.73,18.3,35.76,34.62l.06-.02,12.73,41.19,29.36,22.76c15.15,11.7,22.01,30.16,19.61,47.85l-3.79,40.74,18.57,32.53c9.01,15.88,8.69,34.51.79,49.56h.02s-20.24,38.37-20.24,38.37l4.67,36.84c2.3,18.18-5.16,35.35-18.29,46.24l.08.1-33.36,27.68-9.74,35.67c-4.82,17.7-18.29,30.72-34.62,35.76l.02.05-41.19,12.73-22.76,29.36c-11.7,15.15-30.15,22.01-47.85,19.61l-40.74-3.79-32.53,18.57c-15.88,9.01-34.51,8.69-49.56.79v.02s-38.37-20.24-38.37-20.24l-36.84,4.67c-18.18,2.3-35.35-5.16-46.24-18.3l-.1.08-27.68-33.37-35.67-9.74c-17.7-4.82-30.73-18.3-35.76-34.62l-.05.02-12.73-41.19-29.36-22.76c-15.15-11.7-22.01-30.16-19.61-47.85l3.79-40.74-18.57-32.53c-9.01-15.88-8.69-34.51-.79-49.56h-.02s20.24-38.36,20.24-38.36l-4.67-36.84c-2.3-18.18,5.16-35.35,18.3-46.24l-.08-.1,33.36-27.68,9.74-35.67c4.82-17.7,18.29-30.73,34.62-35.76l-.02-.05,41.19-12.74,22.76-29.36c11.7-15.15,30.15-22.01,47.85-19.61l40.74,3.79,32.53-18.57c15.88-9.01,34.52-8.69,49.56-.79v-.02Z"/>
+                </g>
+                <g id="g3005">
+                    <path id="path3007" class="cls-1" d="m244.72,524.33c22.03,0,40-17.97,40-40s-17.97-40-40-40-40,17.97-40,40,17.97,40,40,40Z"/>
+                </g>
+                <g id="g3009">
+                    <path id="path3011" class="cls-1" d="m482.05,386.99c22.03,0,40-17.97,40-40s-17.97-40-40-40-40,17.97-40,40,17.97,40,40,40Z"/>
+                </g>
+                <g id="g3013">
+                    <path id="path3015" class="cls-1" d="m266.05,253.66c22.03,0,40-17.97,40-40s-17.97-40-40-40-40,17.97-40,40,17.97,40,40,40Z"/>
+                </g>
+                <g id="g3017">
+                    <path id="path3019" class="cls-4" d="m158.06,372.33c14.69,0,26.67-11.98,26.67-26.67s-11.98-26.67-26.67-26.67-26.67,11.98-26.67,26.67,11.98,26.67,26.67,26.67"/>
+                </g>
+                <g id="g3021">
+                    <path id="path3023" class="cls-4" d="m414.05,530.99c14.69,0,26.67-11.98,26.67-26.67s-11.98-26.67-26.67-26.67-26.67,11.98-26.67,26.67,11.98,26.67,26.67,26.67"/>
+                </g>
+                <g id="g3025">
+                    <path id="path3027" class="cls-4" d="m442.06,212.33c14.69,0,26.67-11.98,26.67-26.67s-11.98-26.67-26.67-26.67-26.67,11.98-26.67,26.67,11.98,26.67,26.67,26.67"/>
+                </g>
+                <g id="g3029">
+                    <path id="path3031" class="cls-3" d="m341.32,341.33h0"/>
+                </g>
+                <g id="g3033">
+                    <path id="path3035" class="cls-3" d="m327.39,572.33h0"/>
+                </g>
+                <g id="g3037">
+                    <path id="path3039" class="cls-3" d="m520.72,458.99h0"/>
+                </g>
+                <g id="g3041">
+                    <path id="path3043" class="cls-3" d="m138.05,225.66h.01"/>
+                </g>
+                <g id="g3045">
+                    <path id="path3047" class="cls-3" d="m532.72,228.33h0"/>
+                </g>
+                <g id="g3049">
+                    <path id="path3051" class="cls-3" d="m348.72,121.66h.01"/>
+                </g>
+            </g>
+        </svg>
     </svg>
 </div>
 

@@ -54,7 +54,7 @@
                     <div class="container ">
                         <ul class="nav d-block header__middle__menu__level1 header__mob-menu__nav">
                             <li>
-                                <a href="" class="">
+                                <a href="#mobMenuCat" data-bs-toggle="modal" data-bs-target="#mobMenuCat">
                                     <span>КАТАЛОГ</span>
                                     <svg width="5" height="8">
                                         <use xlink:href="#svg-right"></use>
@@ -247,7 +247,7 @@
                             <div class="col-xl-5">
                                 <ul class="nav header__middle__ico-menu">
                                     <li class="header__middle__ico-menu__mob-nav">
-                                        <a href="">
+                                        <a href="#mobSearch" data-bs-toggle="modal" data-bs-target="#mobSearch">
                                             <div class="header__middle__ico-menu__wrap">
                                                 <svg width="20" height="20" class="search-open">
                                                     <use xlink:href="#svg-search"></use>
@@ -295,6 +295,7 @@
                                     <li class="header__middle__ico-menu__mob-nav">
                                         <a href="">
                                             <div class="header__middle__ico-menu__wrap">
+                                                <span class="cabinet-active"></span>
                                                 <svg width="20" height="20">
                                                     <use xlink:href="#svg-user"></use>
                                                 </svg>
@@ -303,7 +304,17 @@
                                         </a>
                                     </li>
                                     <li class="header__middle__ico-menu__pc-lk">
-                                        <div class="dropdown header__middle__lk">
+                                        <a href="">
+                                            <div class="header__middle__ico-menu__wrap">
+
+                                                <svg width="20" height="20">
+                                                    <use xlink:href="#svg-user"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="header__middle__ico-menu__mob-caption">Кабинет</div>
+                                        </a>
+
+                                        <!--div class="dropdown header__middle__lk">
                                             <a href="" data-bs-toggle="dropdown">
                                                 <svg width="20" height="20">
                                                     <use xlink:href="#svg-user"></use>
@@ -320,10 +331,10 @@
                                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                                             </ul>
-                                        </div>
+                                        </div-->
                                     </li>
                                     <li class="header__middle__ico-menu__mob-nav">
-                                        <a href="">
+                                        <a href="#mobMenuCat" data-bs-toggle="modal" data-bs-target="#mobMenuCat">
                                             <div class="header__middle__ico-menu__wrap">
                                                 <svg width="20" height="20">
                                                     <use xlink:href="#svg-cat"></use>
@@ -627,3 +638,263 @@
 
 
     </header>
+
+    <div class="modal fade" tabindex="-1" id="mobMenuCat">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+            <div class="modal-content p-0 mob-menu-modal">
+                <div class="container p-0">
+                    <div class="offcanvas-header">
+                        <div class="offcanvas-title">КАТАЛОГ</div>
+                        <button class="close" data-bs-dismiss="modal">
+                            <svg width="14" height="14">
+                                <use xlink:href="#svg-close2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="nav d-block header__middle__menu__level1 header__mob-menu__nav">
+                            <li>
+                                <a href="">НОВИНКИ</a>
+                            </li>
+                            <li>
+                                <a href="">MUST HAVE</a>
+                            </li>
+                            <li>
+                                <a href="">СКИДКИ%</a>
+                            </li>
+                            <li class="line"></li>
+                            <li>
+                                <a href="">Мини-версии</a>
+                            </li>
+                            <li>
+                                <a href="#mobSubMenu_1" data-bs-toggle="offcanvas" data-bs-target="#mobSubMenu_1">
+                                    <span>Лицо</span>
+                                    <svg width="5" height="8">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                                <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="mobSubMenu_1">
+                                    <div class="container p-0">
+                                        <div class="offcanvas-header">
+                                            <div class="d-flex align-items-center">
+                                                <div class="offcanvas-header__back" data-bs-dismiss="offcanvas"
+                                                     aria-label="Close">
+                                                    <svg width="7" height="12">
+                                                        <use xlink:href="#svg-left2"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="offcanvas-title">Лицо</div>
+                                            </div>
+                                            <button class="close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                                <svg width="14" height="14">
+                                                    <use xlink:href="#svg-close2"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <ul class="nav d-block header__middle__menu__level1 header__mob-menu__nav">
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li class="tpad40">
+                                                    <a href="">Смотреть все категории</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#mobSubMenu_1" data-bs-toggle="offcanvas" data-bs-target="#mobSubMenu_2">
+                                    <span>Глаза</span>
+                                    <svg width="5" height="8">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                                <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="mobSubMenu_2">
+                                    <div class="container p-0">
+                                        <div class="offcanvas-header">
+                                            <div class="d-flex align-items-center">
+                                                <div class="offcanvas-header__back" data-bs-dismiss="offcanvas"
+                                                     aria-label="Close">
+                                                    <svg width="7" height="12">
+                                                        <use xlink:href="#svg-left2"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="offcanvas-title">Глаза</div>
+                                            </div>
+                                            <button class="close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                                <svg width="14" height="14">
+                                                    <use xlink:href="#svg-close2"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <ul class="nav d-block header__middle__menu__level1 header__mob-menu__nav">
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Тональные кремы</a>
+                                                </li>
+                                                <li class="tpad40">
+                                                    <a href="">Смотреть все категории</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Брови</span>
+                                    <svg width="5" height="8">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>Губы</span>
+                                    <svg width="5" height="8">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="mobSearch">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+            <div class="modal-content p-0">
+                <div class="container p-0">
+                    <div class="offcanvas-header">
+                        <div class="offcanvas-title">ПОИСК</div>
+                        <button class="close" data-bs-dismiss="modal">
+                            <svg width="14" height="14">
+                                <use xlink:href="#svg-close2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-6 col-lg-8">
+                                <div class="header__search-form">
+                                    <input class="header__search-form__inp" type="text" required="" placeholder="я ищу">
+                                    <span class="header__search-form__clear">
+                                             <svg width="12" height="12">
+                                                <use xlink:href="#svg-close2"></use>
+                                            </svg>
+                                        </span>
+                                    <button type="submit" class="header__search-form__submit">
+                                        <svg width="20" height="20">
+                                            <use xlink:href="#svg-search"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="header__search-not">
+                                    К сожалению, на ваш поисковый запроc ничего не найдено.
+                                </div>
+                                <div class="header__search-res">
+                                    <a href="" class="header__search-res__item product-search">
+                                        <div class="product-search__img">
+                                            <picture>
+                                                <source srcset="images/dist/lot1.jpg 1x, images/dist/lot1@2.jpg 2x">
+                                                <img src="images/dist/lot1.jpg" alt="" width="110" height="110">
+                                            </picture>
+                                        </div>
+                                        <div class="product-search__desc">
+                                            <ul class="nav  product-tips product-search__tips">
+                                                <li>
+                                                    <span class="product-tips__item product-tips__item--must-have">MUST HAVE</span>
+                                                </li>
+                                            </ul>
+                                            <div class="product-search__title">
+                                                Стойкий
+                                                высокопигментированный
+                                                консилер
+                                            </div>
+                                            <div class="product-search__cost">
+                                                <div class="prices">
+                                                    <div class="price price--old">1860 <span class="rur">q</span>
+                                                    </div>
+                                                    <div class="price price--hot">1395 <span class="rur">q</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="header__search-res__item product-search">
+                                        <div class="product-search__img">
+                                            <picture>
+                                                <source srcset="images/dist/lot1.jpg 1x, images/dist/lot1@2.jpg 2x">
+                                                <img src="images/dist/lot1.jpg" alt="" width="110" height="110">
+                                            </picture>
+                                        </div>
+                                        <div class="product-search__desc">
+
+                                            <div class="product-search__title">
+                                                Стойкий
+                                                высокопигментированный
+                                                консилер
+                                                Стойкий
+                                                высокопигментированный
+                                                консилер
+                                            </div>
+                                            <div class="product-search__cost">
+                                                <div class="prices">
+
+                                                    <div class="price price--hot">1395 <span class="rur">q</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="header__search-res__footer">
+                                        <a href="" class="btn btn--bay">ПОКАЗАТЬ ВСЕ РЕЗУЛЬТАТЫ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
