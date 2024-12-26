@@ -838,7 +838,7 @@ a {
 .banner-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 66px 60px;
+  gap: 66px;
   margin-bottom: 90px;
 
   &__item {
@@ -1134,6 +1134,7 @@ button:hover {
       justify-content: space-between;
       border-radius: 5px;
       height: 34px;
+      letter-spacing: 0.1em;
 
       svg {
         min-width: 5px;
@@ -1162,6 +1163,7 @@ button:hover {
         text-transform: uppercase;
         transition: all 0.2s ease-in-out;
         color: #000;
+        letter-spacing: 0.1em;
 
         &:hover {
           color: #7f7f7f;
@@ -1263,6 +1265,9 @@ button:hover {
   z-index: 99;
   opacity: 0;
   background: #000;
+}
+.header__middle__menu__level2__banner:hover {
+  color: #7f7f7f;
 }
 
 .show .header__middle__menu__mask {
