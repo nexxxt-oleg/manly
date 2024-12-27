@@ -1266,8 +1266,13 @@ button:hover {
   opacity: 0;
   background: #000;
 }
+
 .header__middle__menu__level2__banner:hover {
   color: #7f7f7f;
+}
+.header__middle__menu__level2__banner .zoom-hover__img,
+.banner-grid__item .zoom-hover__img {
+  border-radius: 10px;
 }
 
 .show .header__middle__menu__mask {
@@ -1496,6 +1501,7 @@ button:hover {
   justify-content: space-between;
   padding: 15px 13px 20px;
 }
+
 .offcanvas-title {
   font-size: 14px;
   font-weight: bold;
@@ -1504,11 +1510,13 @@ button:hover {
   letter-spacing: 0.1em;
   color: #4e1498;
 }
+
 button.close {
   border: none;
   padding: 0;
   background: transparent;
   color: #000;
+
   &:hover,
   &:active,
   &:focus {
@@ -1516,20 +1524,91 @@ button.close {
     box-shadow: none;
   }
 }
+
 .offcanvas-body {
   padding: 0 13px 30px;
   overflow: hidden;
+
   .header__middle__menu__level1 a {
     padding-left: 0;
     padding-right: 6px;
   }
 }
+
 .tpad40 {
   padding-top: 40px;
 }
+
 .offcanvas-header__back {
   padding-right: 15px;
   color: #000;
+}
+
+.header__search-not {
+  padding-top: 25px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.cookie {
+  position: fixed;
+  z-index: 30;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    border-radius: 10px;
+    background: #fff;
+    position: relative;
+    z-index: 30;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &__ico {
+    min-width: 110px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__desc {
+    flex-grow: 1;
+    font-size: 12px;
+    line-height: 18px;
+
+    a {
+      color: #000;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__btn {
+    min-width: 160px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.zoom-hover {
+  &__img {
+    overflow: hidden;
+    img {
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  &:hover {
+    .zoom-hover__img img {
+      transform: scale(1.1);
+    }
+  }
 }
 
 @media (min-width: 1199px) {
@@ -1571,54 +1650,10 @@ button.close {
     font-size: 38px;
   }
 }
-.header__search-not {
-  padding-top: 25px;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 500;
-}
-.cookie {
-  position: fixed;
-  z-index: 30;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  &__wrap {
-    display: flex;
-    align-items: center;
-    padding: 25px 0;
-    border-radius: 10px;
-    background: #fff;
-    position: relative;
-    z-index: 30;
-    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
-  }
-  &__ico {
-    min-width: 110px;
-    display: flex;
-    justify-content: center;
-  }
-  &__desc {
-    flex-grow: 1;
-    font-size: 12px;
-    line-height: 18px;
-    a {
-      color: #000;
-      text-decoration: underline;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-  &__btn {
-    min-width: 160px;
-    display: flex;
-    justify-content: center;
-  }
-}
+
 
 @media (max-width: 1199px) {
-  .header__middle__ico-menu>li>a {
+  .header__middle__ico-menu > li > a {
     min-width: 50px;
   }
   .header__middle__ico-menu {
@@ -1639,7 +1674,7 @@ button.close {
   .footer {
     padding-bottom: 80px;
   }
-  .header__middle__ico-menu>li:not(:first-child) {
+  .header__middle__ico-menu > li:not(:first-child) {
     padding-left: 0;
   }
   .header__middle__ico-menu__mob-nav {
@@ -1652,7 +1687,7 @@ button.close {
     line-height: 1.2;
     padding-top: 5px;
   }
-  .header__middle__ico-menu>li>a {
+  .header__middle__ico-menu > li > a {
     flex-direction: column;
   }
   .full-banner__title {
@@ -1861,6 +1896,7 @@ button.close {
   }
   .product-search__desc {
     padding-left: 16px;
+
     .product-tips {
       padding-bottom: 5px;
     }
@@ -1900,6 +1936,7 @@ button.close {
         height: 19px;
       }
     }
+
     &__caption {
       padding-top: 10px;
     }
@@ -1991,6 +2028,7 @@ button.close {
     .dropdown__line {
       transition: all 0.2s ease-in-out;
     }
+
     &:not(.collapsed) {
       .dropdown__line {
         transform: rotate(180deg);
