@@ -2162,6 +2162,20 @@ button.close {
   }
 }
 
+.modal-dialog.modal-dialog-centered {
+  align-items: flex-end;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: calc(100vh - 20px);
+}
+
+.offcanvas.offcanvas-bottom {
+  height: auto;
+  border-top: none;
+  border-radius: 10px 10px 0 0;
+}
+
+
 @media (min-width: 1199px) {
 
   .fix_menu {

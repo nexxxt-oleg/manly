@@ -1,42 +1,42 @@
 <!--#set var="title" value="Must Have" -->
 <!--#include virtual="/parts/header.html" -->
-<div class="modal fade" id="mobSort" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered m-0">
-        <div class="modal-content modal-content--rounded">
-            <div class="btn-close-center" data-bs-dismiss="modal">
-                <svg width="14" height="14">
-                    <use xlink:href="#svg-close2"></use>
-                </svg>
-            </div>
-            <form action="" class="mob-sort">
-                <div class="mob-sort__list">
-                    <label class="mob-sort__list__item">
-                        <input type="radio" value="1" name="sort" checked>
-                        <span>Сначала новинки</span>
-                    </label>
-                    <label class="mob-sort__list__item">
-                        <input type="radio" value="2" name="sort">
-                        <span>Сначала со скидкой</span>
-                    </label>
-                    <label class="mob-sort__list__item">
-                        <input type="radio" value="3" name="sort">
-                        <span>Сначала популярные</span>
-                    </label>
-                    <label class="mob-sort__list__item">
-                        <input type="radio" value="4" name="sort">
-                        <span>Сначала дорогие</span>
-                    </label>
-                    <label class="mob-sort__list__item">
-                        <input type="radio" value="5" name="sort">
-                        <span>Сначала дешевые</span>
-                    </label>
-                </div>
-                <div class="mob-sort__footer">
-                    <input type="submit" value="ПРИМЕНИТЬ" class="btn btn--bay">
-                </div>
-            </form>
+<div class="offcanvas offcanvas-bottom" id="mobSort" tabindex="-1">
+
+    <div class="modal-content modal-content--rounded">
+        <div class="btn-close-center" data-bs-dismiss="offcanvas">
+            <svg width="14" height="14">
+                <use xlink:href="#svg-close2"></use>
+            </svg>
         </div>
+        <form action="" class="mob-sort">
+            <div class="mob-sort__list">
+                <label class="mob-sort__list__item">
+                    <input type="radio" value="1" name="sort" checked>
+                    <span>Сначала новинки</span>
+                </label>
+                <label class="mob-sort__list__item">
+                    <input type="radio" value="2" name="sort">
+                    <span>Сначала со скидкой</span>
+                </label>
+                <label class="mob-sort__list__item">
+                    <input type="radio" value="3" name="sort">
+                    <span>Сначала популярные</span>
+                </label>
+                <label class="mob-sort__list__item">
+                    <input type="radio" value="4" name="sort">
+                    <span>Сначала дорогие</span>
+                </label>
+                <label class="mob-sort__list__item">
+                    <input type="radio" value="5" name="sort">
+                    <span>Сначала дешевые</span>
+                </label>
+            </div>
+            <div class="mob-sort__footer">
+                <input type="submit" value="ПРИМЕНИТЬ" class="btn btn--bay" data-bs-toggle="offcanvas" data-bs-target="#mobSort">
+            </div>
+        </form>
     </div>
+
 </div>
 <div class="container">
     <ul class="nav breadcrumb">
@@ -55,7 +55,7 @@
         <div class="catalog-top__count">
             Товаров: <b>200</b>
         </div>
-        <div class="catalog-top__mob-sort" data-bs-toggle="modal" data-bs-target="#mobSort">
+        <div class="catalog-top__mob-sort" data-bs-toggle="offcanvas" data-bs-target="#mobSort">
             <span>Сначала новинки</span>
             <svg class="dropdown__line" width="9" height="5">
                 <use xlink:href="#svg-down"></use>
