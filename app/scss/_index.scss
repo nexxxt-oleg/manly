@@ -2041,6 +2041,91 @@ button.close {
 
 }
 
+.modal-content.modal-content--rounded {
+  border: none;
+  border-radius: 10px 10px 0 0;
+  padding: 30px;
+}
+
+.btn-close-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  margin-left: -18px;
+  position: absolute;
+  z-index: 100;
+  top: -60px;
+  left: 50%;
+  background: #fff;
+}
+
+.mob-sort {
+  &__list {
+    &__item {
+      display: block;
+      margin-bottom: 15px;
+      input {
+        display: none;
+        &:checked + span {
+          &::after {
+            border-color: #4e1498;
+          }
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
+      span {
+        display: block;
+        padding: 3px 20px 3px 0;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000;
+        position: relative;
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: 3px;
+          right: 0;
+          width: 16px;
+          height: 16px;
+          border-radius: 8px;
+          border: 2px solid #c9c9c9;
+          transition: all 0.2s ease-in-out;
+        }
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: 20;
+          width: 8px;
+          height: 8px;
+          border-radius: 4px;
+          background: #4e1498;
+          right: 4px;
+          top: 7px;
+          opacity: 0;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    .btn {
+      width: 142px;
+    }
+  }
+}
+
 @media (min-width: 1199px) {
 
   .fix_menu {
@@ -2323,9 +2408,13 @@ button.close {
     padding-bottom: 30px;
   }
   .catalog-top__mob-sort {
-    display: block;
+    display: flex;
+    align-items: center;
     font-size: 13px;
     line-height: 16px;
+    .dropdown__line {
+      margin-left: 4px;
+    }
   }
   .catalog-top {
     flex-wrap: wrap;
@@ -2526,6 +2615,13 @@ button.close {
 }
 
 @media (max-width: 768px) {
+  .product-box__tips {
+    left: 0;
+  }
+  .product-tips__item {
+    font-size: 8px;
+    height: 18px;
+  }
   .pagination__item__link,
   .pagination__btn__nav,
   .pagination__item__dotts {
