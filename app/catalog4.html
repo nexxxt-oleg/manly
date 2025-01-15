@@ -1,0 +1,128 @@
+<!--#set var="title" value="Must Have" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="modal fade" id="mobSort" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered m-0">
+        <div class="modal-content modal-content--rounded">
+            <div class="btn-close-center" data-bs-dismiss="modal">
+                <svg width="14" height="14">
+                    <use xlink:href="#svg-close2"></use>
+                </svg>
+            </div>
+            <form action="" class="mob-sort">
+                <div class="mob-sort__list">
+                    <label class="mob-sort__list__item">
+                        <input type="radio" value="1" name="sort" checked>
+                        <span>Сначала новинки</span>
+                    </label>
+                    <label class="mob-sort__list__item">
+                        <input type="radio" value="2" name="sort">
+                        <span>Сначала со скидкой</span>
+                    </label>
+                    <label class="mob-sort__list__item">
+                        <input type="radio" value="3" name="sort">
+                        <span>Сначала популярные</span>
+                    </label>
+                    <label class="mob-sort__list__item">
+                        <input type="radio" value="4" name="sort">
+                        <span>Сначала дорогие</span>
+                    </label>
+                    <label class="mob-sort__list__item">
+                        <input type="radio" value="5" name="sort">
+                        <span>Сначала дешевые</span>
+                    </label>
+                </div>
+                <div class="mob-sort__footer">
+                    <input type="submit" value="ПРИМЕНИТЬ" class="btn btn--bay">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <ul class="nav breadcrumb">
+        <li class="breadcrumb__item">
+            <a href="/">Главная</a>
+        </li>
+        <li class="breadcrumb__item">
+            <a href="/">Каталог</a>
+        </li>
+        <li class="breadcrumb__item">
+            <a href="/">Лицо</a>
+        </li>
+    </ul>
+    <h1 class="title-page">Must Have</h1>
+    <div class="catalog-top">
+        <div class="catalog-top__count">
+            Товаров: <b>200</b>
+        </div>
+        <div class="catalog-top__mob-sort" data-bs-toggle="modal" data-bs-target="#mobSort">
+            <span>Сначала новинки</span>
+            <svg class="dropdown__line" width="9" height="5">
+                <use xlink:href="#svg-down"></use>
+            </svg>
+        </div>
+        <div class="catalog-top__available">
+            <label class="custom-radio">
+                <input type="checkbox" value="1" name="available">
+                <span class="custom-radio__value">Только в наличии</span>
+            </label>
+        </div>
+        <div class="catalog-top__sort">
+            <div class="catalog-top__sort__label">
+                Сначала:
+            </div>
+            <ul class="nav catalog-top__sort__list">
+                <li><a href="" class="active">Новинки</a></li>
+                <li><a href="">Со скидкой</a></li>
+                <li><a href="">Популярные</a></li>
+                <li><a href="">Дорогие</a></li>
+                <li><a href="">Дешевые</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="catalog-filter">
+        <div class="catalog-filter__list">
+            <div class="swiper" id="filterCat">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="" class="active">Все</a></div>
+                    <div class="swiper-slide"><a href="">Кисти</a></div>
+                    <div class="swiper-slide"><a href="">Ресницы</a></div>
+                    <div class="swiper-slide"><a href="">Брови</a></div>
+                    <div class="swiper-slide"><a href="">Губы</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row fpad50 catalog-list">
+        <div class="col-xl-3  col-lg-4 col-6 slider-product__item fpad50">
+            <!--#include virtual="/parts/item-product.html" -->
+        </div>
+        <div class="col-xl-3  col-lg-4 col-6 slider-product__item fpad50">
+            <!--#include virtual="/parts/item-product2.html" -->
+        </div>
+        <div class="col-xl-3  col-lg-4 col-6 slider-product__item fpad50">
+            <!--#include virtual="/parts/item-product.html" -->
+        </div>
+    </div>
+
+    <div class="seo-text text">
+        <h2>Что такое аджастеры и для чего они нужны</h2>
+
+        <p>Аджастер для тонального крема – это косметический продукт с высоким содержанием пигмента, который добавляют в
+        тональные основы, чтобы изменить их цвет или оттенок. С помощью аджастера можно затемнить или высветлить
+        тональное средство, а также поменять его подтон. Аджастер – это очень удобный инструмент для визажиста,
+        поскольку позволяет превратить несколько оттенков тональных кремов в обширную палитру цветов.</p>
+
+        <p>Не профессионалам такой разбавитель тонального крема тоже будет полезен, ведь наша кожа в течение года тоже
+        меняет свой цвет, и с аджастером вам не нужно будет покупать несколько тональных основ под разное время года. К
+        тому же аджастер концентрированный, а значит, его расход будет минимален.</p>
+
+        <p>В нашем магазине вы можете купить два варианта аджастеров для макияжа – белый аджастер White Ray для высветления
+        тонов и оливковый аджастер Dryad для придания оливкового подтона. У них легкая текстура, они однородно
+        смешиваются с тонами, и их можно наносить даже самостоятельно на лицо – так, например, «Дриада» замечательно
+        нейтрализует любые покраснения на коже и может использоваться вместо цветной базы под макияж.</p>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
