@@ -917,44 +917,7 @@
         </div>
     </div>
 
-<div class="offcanvas offcanvas-bottom" id="mobSort" tabindex="-1">
 
-    <div class="modal-content modal-content--rounded">
-        <div class="btn-close-center" data-bs-dismiss="offcanvas">
-            <svg width="14" height="14">
-                <use xlink:href="#svg-close2"></use>
-            </svg>
-        </div>
-        <form action="" class="mob-sort">
-            <div class="mob-sort__list">
-                <label class="mob-sort__list__item">
-                    <input type="radio" value="1" name="sort" checked>
-                    <span>Сначала новинки</span>
-                </label>
-                <label class="mob-sort__list__item">
-                    <input type="radio" value="2" name="sort">
-                    <span>Сначала со скидкой</span>
-                </label>
-                <label class="mob-sort__list__item">
-                    <input type="radio" value="3" name="sort">
-                    <span>Сначала популярные</span>
-                </label>
-                <label class="mob-sort__list__item">
-                    <input type="radio" value="4" name="sort">
-                    <span>Сначала дорогие</span>
-                </label>
-                <label class="mob-sort__list__item">
-                    <input type="radio" value="5" name="sort">
-                    <span>Сначала дешевые</span>
-                </label>
-            </div>
-            <div class="mob-sort__footer">
-                <input type="submit" value="ПРИМЕНИТЬ" class="btn btn--bay" data-bs-toggle="offcanvas" data-bs-target="#mobSort">
-            </div>
-        </form>
-    </div>
-
-</div>
 <div class="container">
     <ul class="nav breadcrumb">
         <li class="breadcrumb__item">
@@ -966,216 +929,234 @@
         <li class="breadcrumb__item">
             <a href="/">Лицо</a>
         </li>
+        <li class="breadcrumb__item">
+            <a href="/">Помада</a>
+        </li>
     </ul>
-    <h1 class="title-page">Must Have</h1>
-    <div class="catalog-top">
-        <div class="catalog-top__count">
-            Товаров: <b>200</b>
-        </div>
-        <div class="catalog-top__mob-sort" data-bs-toggle="offcanvas" data-bs-target="#mobSort">
-            <span>Сначала новинки</span>
-            <svg class="dropdown__line" width="9" height="5">
-                <use xlink:href="#svg-down"></use>
-            </svg>
-        </div>
-        <div class="catalog-top__available">
-            <label class="custom-radio">
-                <input type="checkbox" value="1" name="available">
-                <span class="custom-radio__value">Только в наличии</span>
-            </label>
-        </div>
-        <div class="catalog-top__sort">
-            <div class="catalog-top__sort__label">
-                Сначала:
+
+    <div class="single-product">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="single-product__images">
+                    <div class="single-product__images__thumbnails">
+                        <button id="thumbnailSlider_next" class="single-product__images__thumbnails__nav top-0">
+                            <svg width="18" height="10">
+                                <use xlink:href="#svg-up"></use>
+                            </svg>
+                        </button>
+                        <div class="swiper h-100" id="thumbnailSlider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="single-product__images__thumbnails__item">
+                                        <img src="images/dist/thumb1.jpg" width="84" height="84" loading="lazy" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product__images__thumbnails__item">
+                                        <img src="images/dist/thumb1.jpg" width="84" height="84" loading="lazy" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product__images__thumbnails__item">
+                                        <img src="images/dist/thumb1.jpg" width="84" height="84" loading="lazy" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product__images__thumbnails__item">
+                                        <img src="images/dist/thumb1.jpg" width="84" height="84" loading="lazy" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product__images__thumbnails__item">
+                                        <img src="images/dist/thumb1.jpg" width="84" height="84" loading="lazy" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="single-product__images__thumbnails__item">
+                                        <img src="images/dist/thumb1.jpg" width="84" height="84" loading="lazy" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="thumbnailSlider_prev" class="single-product__images__thumbnails__nav bottom-0">
+                            <svg width="18" height="10">
+                                <use xlink:href="#svg-down"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="single-product__images__main">
+                        <div class="swiper" id="productSlider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="images/dist/pr@2.jpg" data-fancybox="gallery"
+                                       class="single-product__image-item">
+                                        <picture>
+                                            <source srcset="images/dist/pr.jpg 1x, images/dist/pr@2.jpg 2x">
+                                            <img src="images/dist/pr.jpg" alt="" width="522" height="522"
+                                                 loading="lazy">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="images/dist/pr@2.jpg" data-fancybox="gallery"
+                                       class="single-product__image-item">
+                                        <picture>
+                                            <source srcset="images/dist/pr.jpg 1x, images/dist/pr@2.jpg 2x">
+                                            <img src="images/dist/pr.jpg" alt="" width="522" height="522"
+                                                 loading="lazy">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="images/dist/pr@2.jpg" data-fancybox="gallery"
+                                       class="single-product__image-item">
+                                        <picture>
+                                            <source srcset="images/dist/pr.jpg 1x, images/dist/pr@2.jpg 2x">
+                                            <img src="images/dist/pr.jpg" alt="" width="522" height="522"
+                                                 loading="lazy">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="images/dist/pr@2.jpg" data-fancybox="gallery"
+                                       class="single-product__image-item">
+                                        <picture>
+                                            <source srcset="images/dist/pr.jpg 1x, images/dist/pr@2.jpg 2x">
+                                            <img src="images/dist/pr.jpg" alt="" width="522" height="522"
+                                                 loading="lazy">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="images/dist/pr@2.jpg" data-fancybox="gallery"
+                                       class="single-product__image-item">
+                                        <picture>
+                                            <source srcset="images/dist/pr.jpg 1x, images/dist/pr@2.jpg 2x">
+                                            <img src="images/dist/pr.jpg" alt="" width="522" height="522"
+                                                 loading="lazy">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="images/dist/pr@2.jpg" data-fancybox="gallery"
+                                       class="single-product__image-item">
+                                        <picture>
+                                            <source srcset="images/dist/pr.jpg 1x, images/dist/pr@2.jpg 2x">
+                                            <img src="images/dist/pr.jpg" alt="" width="522" height="522"
+                                                 loading="lazy">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul class="nav catalog-top__sort__list">
-                <li><a href="" class="active">Новинки</a></li>
-                <li><a href="">Со скидкой</a></li>
-                <li><a href="">Популярные</a></li>
-                <li><a href="">Дорогие</a></li>
-                <li><a href="">Дешевые</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="catalog-filter">
-        <div class="catalog-filter__list">
-            <div class="swiper" id="filterCat">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href="" class="active">Все</a></div>
-                    <div class="swiper-slide"><a href="">Кисти</a></div>
-                    <div class="swiper-slide"><a href="">Ресницы</a></div>
-                    <div class="swiper-slide"><a href="">Брови</a></div>
-                    <div class="swiper-slide"><a href="">Губы</a></div>
+            <div class="col-lg-6">
+                <ul class="nav product-tips single-product__tips">
+                    <li>
+                        <span class="product-tips__item product-tips__item--new">НОВИНКА</span>
+                    </li>
+                    <li>
+                        <span class="product-tips__item product-tips__item--must-have">MUST HAVE</span>
+                    </li>
+                </ul>
+                <div class="single-product__props-top">
+                    <dl class="single-product__props-top__item">
+                        <dt>Артикул:</dt>
+                        <dd>DL1</dd>
+                    </dl>
+                    <dl class="single-product__props-top__item">
+                        <dt>Название:</dt>
+                        <dd>Tenderness / Нежность</dd>
+                    </dl>
+                    <dl class="single-product__props-top__item">
+                        <dt>Вес:</dt>
+                        <dd>3 г</dd>
+                    </dl>
+                </div>
+                <h1 class="single-product__title">Насыщенная кремовая увлажняющая помада Восторг / Delight</h1>
+                <div class="single-product__status">
+                    <div class="status">ЕСТЬ В НАЛИЧИИ</div>
+                </div>
+                <div class="single-product__preview">
+                    <p>Новая коллекция насыщенных кремовых помад - это яркий и эффектный выбор для любого макияжа. Наслаждайтесь насыщенным цветом и блеском в одно касание благодаря нежной кремовой текстуре с маслами и восками. Коллекция включает в себя 10 потрясающих оттенков. Яркий дизайн этой коллекции обеспечит вам полный восторг!</p>
+                    <br>
+                    <p>Сделано в Италии.</p>
+                </div>
+
+                <div class="single-product__sku">
+                    <div class="single-product__sku__title">
+                        ВЫБОР ВАРИАНТА
+                    </div>
+                    <ul class="nav single-product__sku__list">
+                        <li>
+                            <div class="single-product__sku__item active">
+                                <div class="single-product__sku__item__img">
+                                    <img src="images/dist/sku.jpg" alt="">
+                                </div>
+                                <div class="single-product__sku__item__caption">
+                                    DL1
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-product__sku__item active">
+                                <div class="single-product__sku__item__img">
+                                    <img src="images/dist/sku.jpg" alt="">
+                                </div>
+                                <div class="single-product__sku__item__caption">
+                                    DL2
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-product__sku__item active">
+                                <div class="single-product__sku__item__img">
+                                    <img src="images/dist/sku.jpg" alt="">
+                                </div>
+                                <div class="single-product__sku__item__caption">
+                                    DL3
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-product__sku__item active">
+                                <div class="single-product__sku__item__img">
+                                    <img src="images/dist/sku.jpg" alt="">
+                                </div>
+                                <div class="single-product__sku__item__caption">
+                                    DL4
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-product__sku__item active">
+                                <div class="single-product__sku__item__img">
+                                    <img src="images/dist/sku.jpg" alt="">
+                                </div>
+                                <div class="single-product__sku__item__caption">
+                                    DL5
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="single-product__sku__item active">
+                                <div class="single-product__sku__item__img">
+                                    <img src="images/dist/sku.jpg" alt="">
+                                </div>
+                                <div class="single-product__sku__item__caption">
+                                    DL6
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="row fpad50 catalog-list">
-        <div class="col-xl-3  col-lg-4 col-6 slider-product__item fpad50">
-            <div class="product-box">
-
-    <button class="product-box__fav">
-        <svg width="23" height="20">
-            <use xlink:href="#svg-fav"></use>
-        </svg>
-    </button>
-
-    <a href="" class="product-box__img">
-        <ul class="nav d-block product-tips product-box__tips">
-            <li>
-                <span class="product-tips__item product-tips__item--new">НОВИНКА</span>
-            </li>
-            <li>
-                <span class="product-tips__item product-tips__item--must-have">MUST HAVE</span>
-            </li>
-        </ul>
-        <picture>
-            <source srcset="images/dist/lot2.jpg 1x, images/dist/lot2@2.jpg 2x">
-            <img src="images/dist/lot2.jpg" alt="" width="304" height="304" loading="lazy">
-        </picture>
-        <div class="product-box__img__hover">
-            <picture>
-                <source srcset="images/dist/lot_hover.jpg 1x, images/dist/lot_hover@2.jpg 2x">
-                <img src="images/dist/lot_hover.jpg" alt="" width="304" height="304" loading="lazy">
-            </picture>
-        </div>
-    </a>
-    <a href="" class="product-box__body">
-        <div class="product-box__art">Артикул: <span class="product-box__art__val">LBS1</span></div>
-        <div class="product-box__title">Лиловый бьюти-спонж</div>
-        <div class="product-box__sub-title">Lilac Beauty Sponge</div>
-    </a>
-
-    <div class="product-box__footer">
-        <div class="product-box__col-price price">
-            <div class="price price--hot">1395 <span class="rur">q</span></div>
-        </div>
-        <div class="product-box__col-btn">
-
-            <button class="btn btn--bay product-box__bay">В КОРЗИНУ</button>
-        </div>
-    </div>
-
-
 </div>
 
-        </div>
-        <div class="col-xl-3  col-lg-4 col-6 slider-product__item fpad50">
-            <div class="product-box">
-
-    <button class="product-box__fav">
-        <svg width="23" height="20">
-            <use xlink:href="#svg-fav"></use>
-        </svg>
-    </button>
-
-    <a href="" class="product-box__img">
-        <ul class="nav d-block product-tips product-box__tips">
-            <li>
-                <span class="product-tips__item product-tips__item--new">НОВИНКА</span>
-            </li>
-        </ul>
-        <picture>
-            <source srcset="images/dist/lot2.jpg 1x, images/dist/lot2@2.jpg 2x">
-            <img src="images/dist/lot2.jpg" alt="" width="304" height="304" loading="lazy">
-        </picture>
-        <div class="product-box__img__hover">
-            <picture>
-                <source srcset="images/dist/lot_hover.jpg 1x, images/dist/lot_hover@2.jpg 2x">
-                <img src="images/dist/lot_hover.jpg" alt="" width="304" height="304" loading="lazy">
-            </picture>
-        </div>
-    </a>
-    <a href="" class="product-box__body">
-        <div class="product-box__art">Артикул: <span class="product-box__art__val">LBS1</span></div>
-        <div class="product-box__title">Крупная пушистая плоская кисть для лица (для кремовых и сухих текстур) Spring Morning (лимитированная серия)</div>
-        <div class="product-box__sub-title">Lilac Beauty Sponge</div>
-    </a>
-
-    <div class="product-box__footer">
-        <div class="product-box__col-price price">
-            <div class="price price--hot">1395 <span class="rur">q</span></div>
-        </div>
-        <div class="product-box__col-btn">
-
-            <button class="btn btn--bay product-box__bay">В КОРЗИНУ</button>
-        </div>
-    </div>
-
-
-</div>
-
-        </div>
-        <div class="col-xl-3  col-lg-4 col-6 slider-product__item fpad50">
-            <div class="product-box">
-
-    <button class="product-box__fav">
-        <svg width="23" height="20">
-            <use xlink:href="#svg-fav"></use>
-        </svg>
-    </button>
-
-    <a href="" class="product-box__img">
-        <ul class="nav d-block product-tips product-box__tips">
-            <li>
-                <span class="product-tips__item product-tips__item--new">НОВИНКА</span>
-            </li>
-            <li>
-                <span class="product-tips__item product-tips__item--must-have">MUST HAVE</span>
-            </li>
-        </ul>
-        <picture>
-            <source srcset="images/dist/lot2.jpg 1x, images/dist/lot2@2.jpg 2x">
-            <img src="images/dist/lot2.jpg" alt="" width="304" height="304" loading="lazy">
-        </picture>
-        <div class="product-box__img__hover">
-            <picture>
-                <source srcset="images/dist/lot_hover.jpg 1x, images/dist/lot_hover@2.jpg 2x">
-                <img src="images/dist/lot_hover.jpg" alt="" width="304" height="304" loading="lazy">
-            </picture>
-        </div>
-    </a>
-    <a href="" class="product-box__body">
-        <div class="product-box__art">Артикул: <span class="product-box__art__val">LBS1</span></div>
-        <div class="product-box__title">Лиловый бьюти-спонж</div>
-        <div class="product-box__sub-title">Lilac Beauty Sponge</div>
-    </a>
-
-    <div class="product-box__footer">
-        <div class="product-box__col-price price">
-            <div class="price price--hot">1395 <span class="rur">q</span></div>
-        </div>
-        <div class="product-box__col-btn">
-
-            <button class="btn btn--bay product-box__bay">В КОРЗИНУ</button>
-        </div>
-    </div>
-
-
-</div>
-
-        </div>
-    </div>
-
-    <div class="seo-text text">
-        <h2>Что такое аджастеры и для чего они нужны</h2>
-
-        <p>Аджастер для тонального крема – это косметический продукт с высоким содержанием пигмента, который добавляют в
-        тональные основы, чтобы изменить их цвет или оттенок. С помощью аджастера можно затемнить или высветлить
-        тональное средство, а также поменять его подтон. Аджастер – это очень удобный инструмент для визажиста,
-        поскольку позволяет превратить несколько оттенков тональных кремов в обширную палитру цветов.</p>
-
-        <p>Не профессионалам такой разбавитель тонального крема тоже будет полезен, ведь наша кожа в течение года тоже
-        меняет свой цвет, и с аджастером вам не нужно будет покупать несколько тональных основ под разное время года. К
-        тому же аджастер концентрированный, а значит, его расход будет минимален.</p>
-
-        <p>В нашем магазине вы можете купить два варианта аджастеров для макияжа – белый аджастер White Ray для высветления
-        тонов и оливковый аджастер Dryad для придания оливкового подтона. У них легкая текстура, они однородно
-        смешиваются с тонами, и их можно наносить даже самостоятельно на лицо – так, например, «Дриада» замечательно
-        нейтрализует любые покраснения на коже и может использоваться вместо цветной базы под макияж.</p>
-    </div>
-</div>
 
 <div class="form-send">
     <div class="container">
