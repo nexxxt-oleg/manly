@@ -936,7 +936,7 @@
 
     <div class="single-product">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 single-product__pc-img">
                 <div class="single-product__images">
                     <div class="single-product__images__thumbnails">
                         <button id="thumbnailSlider_next" class="single-product__images__thumbnails__nav top-0">
@@ -1052,15 +1052,52 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <ul class="nav product-tips single-product__tips">
-                    <li>
-                        <span class="product-tips__item product-tips__item--new">НОВИНКА</span>
-                    </li>
-                    <li>
-                        <span class="product-tips__item product-tips__item--must-have">MUST HAVE</span>
-                    </li>
-                </ul>
+            <div class="col-lg-6 d-flex flex-column">
+                <div class="single-product__mob-img">
+                    <ul class="nav product-tips single-product__tips">
+                        <li>
+                            <span class="product-tips__item product-tips__item--new">НОВИНКА</span>
+                        </li>
+                        <li>
+                            <span class="product-tips__item product-tips__item--must-have">MUST HAVE</span>
+                        </li>
+                    </ul>
+                    <div class="single-product__mob-img__wrap">
+                        <div class="swiper" id="productSliderMob">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div
+                                            class="single-product__image-item">
+                                        <img src="images/dist/pr.jpg" alt="" width="522" height="522"
+                                             loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div
+                                            class="single-product__image-item">
+                                        <img src="images/dist/pr.jpg" alt="" width="522" height="522"
+                                             loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div
+                                            class="single-product__image-item">
+                                        <img src="images/dist/pr.jpg" alt="" width="522" height="522"
+                                             loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div
+                                            class="single-product__image-item">
+                                        <img src="images/dist/pr.jpg" alt="" width="522" height="522"
+                                             loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="single-product__props-top">
                     <dl class="single-product__props-top__item">
                         <dt>Артикул:</dt>
@@ -1080,7 +1117,10 @@
                     <div class="status">ЕСТЬ В НАЛИЧИИ</div>
                 </div>
                 <div class="single-product__preview">
-                    <p>Новая коллекция насыщенных кремовых помад - это яркий и эффектный выбор для любого макияжа. Наслаждайтесь насыщенным цветом и блеском в одно касание благодаря нежной кремовой текстуре с маслами и восками. Коллекция включает в себя 10 потрясающих оттенков. Яркий дизайн этой коллекции обеспечит вам полный восторг!</p>
+                    <p>Новая коллекция насыщенных кремовых помад - это яркий и эффектный выбор для любого макияжа.
+                        Наслаждайтесь насыщенным цветом и блеском в одно касание благодаря нежной кремовой текстуре с
+                        маслами и восками. Коллекция включает в себя 10 потрясающих оттенков. Яркий дизайн этой
+                        коллекции обеспечит вам полный восторг!</p>
                     <br>
                     <p>Сделано в Италии.</p>
                 </div>
@@ -1172,14 +1212,658 @@
                             </button>
                         </div>
                     </div>
-                    <div class="single-product__col-btn">
-                        <button class="btn btn--bay product-box__bay">В КОРЗИНУ</button>
+                    <div class="single-product__btns">
+                        <div class="single-product__col-btn">
+                            <button class="btn btn--bay product-box__bay">В КОРЗИНУ</button>
+                        </div>
+                        <button class="single-product__fav">
+                            <svg width="23" height="20">
+                                <use xlink:href="#svg-fav"></use>
+                            </svg>
+                        </button>
                     </div>
-                    <button class="single-product__fav">
-                        <svg width="23" height="20">
-                            <use xlink:href="#svg-fav"></use>
+                </div>
+                <div class="single-product__tabs">
+                    <ul class="nav single-product__tabs__nav">
+                        <li>
+                            <a href="#tab1" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">
+                                ОПИСАНИЕ ТОВАРА
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab2" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">
+                                СОСТАВ
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content single-product__tabs__desc text accordion accordion--mob">
+                        <div class="tab-pane fade show active accordion__item" id="tab1">
+                            <div class="accordion-header collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#mob_tab1">
+                                ОПИСАНИЕ ТОВАРА
+                            </div>
+                            <div class="accordion-collapse collapse" id="mob_tab1">
+                                <div class="accordion__item__mob-wrap">
+                                    <p>Вес (г): 3</p>
+
+                                    <p>Насыщенная кремовая увлажняющая помада Delight обеспечивает невероятный комфорт и
+                                        уход
+                                        для ваших губ. Эта помада обладает богатой и насыщенной текстурой, которая легко
+                                        наносится и создает яркое покрытие с красивым блеском.</p>
+                                    <p>Delight содержит увлажняющие компоненты, которые помогают сохранить губы мягкими
+                                        и
+                                        увлажненными в течение всего дня. Она доступна в разнообразных оттенках, от
+                                        нежных и
+                                        естественных до ярких и смелых, позволяя создавать образ на любой вкус и
+                                        настроение.</p>
+                                    <p>Delight идеально подходит для повседневного макияжа, чтобы добавить цвет и
+                                        выразительность вашим губам. Она также может использоваться для создания ярких и
+                                        запоминающихся образов на вечеринках и мероприятиях.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade accordion__item" id="tab2">
+                            <div class="accordion-header collapsed" data-bs-toggle="collapse"
+                                 data-bs-target="#mob_tab2">
+                                СОСТАВ
+                            </div>
+                            <div class="accordion-collapse collapse" id="mob_tab2">
+                                <div class="accordion__item__mob-wrap">
+                                    <p>2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recommendation">
+                    <div class="recommendation__header">
+                        <span class="text-center">
+                            СОВЕТ ОТ ВИЗАЖИСТОВ <span class="text-nowrap">MANLY PRO</span>
+                        </span>
+                    </div>
+                    <div class="recommendation__body">
+                        Для более стойкого эффекта, перед нанесением помады Delight, припудрите губы прозрачной пудрой.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <div class="reviews__header">
+            <h2>ОТЗЫВЫ ПОКУПАТЕЛЕЙ</h2>
+            <div class="reviews__subtitle">
+                Отзывы могут оставлять только <a href="">авторизованные</a> пользователи
+            </div>
+            <div class="reviews__header__params">
+                <div class="reviews__header__params__item">
+                    <div class="reviews__header__params__item__value">
+                        4.9
+                    </div>
+                    <div class="reviews__header__params__item__desc">
+                        <div class="reviews__header__params__item__label">Общий рейтинг</div>
+                        <div class="reviews-stars">
+                            <div class="reviews-stars__val" style="width: 90%">
+                                <span class="reviews-stars__filter-stars">
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <span class="reviews-stars__filter-stars">
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__header__params__item">
+                    <div class="reviews__header__params__item__value">
+                        12+
+                    </div>
+                    <div class="reviews__header__params__item__desc">
+                        <div class="reviews__header__params__item__label">Отзывов</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper overflow-visible" id="mobRevProduct">
+            <div class="reviews__body rev-list">
+
+                <div class="rev-list__item swiper-slide">
+                    <div class="rev-list__item__header">
+                        <div class="rev-list__item__fio">
+                            ДИАНА
+                        </div>
+                        <div class="reviews-stars">
+                            <div class="reviews-stars__val" style="width: 90%">
+                                <span class="reviews-stars__filter-stars">
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <span class="reviews-stars__filter-stars">
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rev-list__item__body">
+                        <p>Цвет насыщенный, текстура не плотная, губы в комфортном состоянии.</p>
+                    </div>
+                    <div class="rev-list__item__footer">
+                        <div class="rev-list__item__date">
+                            16.05.2023
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rev-list__item swiper-slide">
+                    <div class="rev-list__item__header">
+                        <div class="rev-list__item__fio">
+                            ДИАНА
+                        </div>
+                        <div class="reviews-stars">
+                            <div class="reviews-stars__val" style="width: 90%">
+                                <span class="reviews-stars__filter-stars">
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <span class="reviews-stars__filter-stars">
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rev-list__item__body">
+                        <p>Цвет насыщенный, текстура не плотная, губы в комфортном состоянии.
+                            Цвет насыщенный, текстура не плотная, губы в комфортном состоянии.
+                            Цвет насыщенный, текстура не плотная, губы в комфортном состоянии.</p>
+                    </div>
+                    <div class="rev-list__item__footer">
+                        <div class="rev-list__item__date">
+                            16.05.2023
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rev-list__item swiper-slide">
+                    <div class="rev-list__item__header">
+                        <div class="rev-list__item__fio">
+                            ДИАНА
+                        </div>
+                        <div class="reviews-stars">
+                            <div class="reviews-stars__val" style="width: 90%">
+                                <span class="reviews-stars__filter-stars">
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <span class="reviews-stars__filter-stars">
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rev-list__item__body">
+                        <p>Цвет насыщенный, текстура не плотная, губы в комфортном состоянии.</p>
+                    </div>
+                    <div class="rev-list__item__footer">
+                        <div class="rev-list__item__date">
+                            16.05.2023
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="reviews__footer">
+            <button id="reviewsMore" class="reviews__more-btn" data-bs-toggle="modal" data-bs-target="#revModal">
+                ПОКАЗАТЬ ЕЩЕ ОТЗЫВЫ
+            </button>
+        </div>
+    </div>
+
+    <div class="modal fade" id="revModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        ОТЗЫВЫ ПОКУПАТЕЛЕЙ
+                    </div>
+                    <div class="btn-close2" data-bs-dismiss="modal">
+                        <svg width="14" height="14">
+                            <use xlink:href="#svg-close2"></use>
                         </svg>
-                    </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="reviews__subtitle">
+                        Отзывы могут оставлять только <br><a href="">авторизованные</a> пользователи
+                    </div>
+                    <div class="rev-list__item">
+                        <div class="rev-list__item__header">
+                            <div class="rev-list__item__fio">
+                                ДИАНА
+                            </div>
+                            <div class="reviews-stars">
+                                <div class="reviews-stars__val" style="width: 90%">
+                                <span class="reviews-stars__filter-stars">
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                </span>
+                                </div>
+                                <span class="reviews-stars__filter-stars">
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="rev-list__item__body">
+                            <p>Цвет насыщенный, текстура не плотная, губы в комфортном состоянии.</p>
+                        </div>
+                        <div class="rev-list__item__footer">
+                            <div class="rev-list__item__date">
+                                16.05.2023
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rev-list__item">
+                        <div class="rev-list__item__header">
+                            <div class="rev-list__item__fio">
+                                ДИАНА
+                            </div>
+                            <div class="reviews-stars">
+                                <div class="reviews-stars__val" style="width: 90%">
+                                <span class="reviews-stars__filter-stars">
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                </span>
+                                </div>
+                                <span class="reviews-stars__filter-stars">
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="rev-list__item__body">
+                            <p>Цвет насыщенный, текстура не плотная, губы в комфортном состоянии.</p>
+                        </div>
+                        <div class="rev-list__item__footer">
+                            <div class="rev-list__item__date">
+                                16.05.2023
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rev-list__item">
+                        <div class="rev-list__item__header">
+                            <div class="rev-list__item__fio">
+                                ДИАНА
+                            </div>
+                            <div class="reviews-stars">
+                                <div class="reviews-stars__val" style="width: 90%">
+                                <span class="reviews-stars__filter-stars">
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                </span>
+                                </div>
+                                <span class="reviews-stars__filter-stars">
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="rev-list__item__body">
+                            <p>Цвет насыщенный, текстура не плотная, губы в комфортном состоянии.</p>
+                        </div>
+                        <div class="rev-list__item__footer">
+                            <div class="rev-list__item__date">
+                                16.05.2023
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rev-list__item">
+                        <div class="rev-list__item__header">
+                            <div class="rev-list__item__fio">
+                                ДИАНА
+                            </div>
+                            <div class="reviews-stars">
+                                <div class="reviews-stars__val" style="width: 90%">
+                                <span class="reviews-stars__filter-stars">
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                    <svg width="12" height="12">
+                                        <use xlink:href="#svg-star"></use>
+                                    </svg>
+                                </span>
+                                </div>
+                                <span class="reviews-stars__filter-stars">
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-star"></use>
+                                </svg>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="rev-list__item__body">
+                            <p>Цвет насыщенный, текстура не плотная, губы в комфортном состоянии.</p>
+                        </div>
+                        <div class="rev-list__item__footer">
+                            <div class="rev-list__item__date">
+                                16.05.2023
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="related-products">
+        <div class="related-products__title">С ЭТИМ ТОВАРОМ ЧАСТО ПОКУПАЮТ</div>
+        <div class="box-slider__body">
+            <div class="swiper overflow-visible" id="mobSliderProduct">
+                <div class="swiper-wrapper related-products__rows">
+                    <div class="swiper-slide slider-product__item">
+                        <div class="product-box">
+
+    <button class="product-box__fav">
+        <svg width="23" height="20">
+            <use xlink:href="#svg-fav"></use>
+        </svg>
+    </button>
+
+    <a href="" class="product-box__img">
+        <ul class="nav d-block product-tips product-box__tips">
+            <li>
+                <span class="product-tips__item product-tips__item--new">НОВИНКА</span>
+            </li>
+            <li>
+                <span class="product-tips__item product-tips__item--must-have">MUST HAVE</span>
+            </li>
+        </ul>
+        <picture>
+            <source srcset="images/dist/lot2.jpg 1x, images/dist/lot2@2.jpg 2x">
+            <img src="images/dist/lot2.jpg" alt="" width="304" height="304" loading="lazy">
+        </picture>
+        <div class="product-box__img__hover">
+            <picture>
+                <source srcset="images/dist/lot_hover.jpg 1x, images/dist/lot_hover@2.jpg 2x">
+                <img src="images/dist/lot_hover.jpg" alt="" width="304" height="304" loading="lazy">
+            </picture>
+        </div>
+    </a>
+    <a href="" class="product-box__body">
+        <div class="product-box__art">Артикул: <span class="product-box__art__val">LBS1</span></div>
+        <div class="product-box__title">Лиловый бьюти-спонж</div>
+        <div class="product-box__sub-title">Lilac Beauty Sponge</div>
+    </a>
+
+    <div class="product-box__footer">
+        <div class="product-box__col-price price">
+            <div class="price price--hot">1395 <span class="rur">q</span></div>
+        </div>
+        <div class="product-box__col-btn">
+
+            <button class="btn btn--bay product-box__bay">В КОРЗИНУ</button>
+        </div>
+    </div>
+
+
+</div>
+
+                    </div>
+                    <div class="swiper-slide slider-product__item">
+                        <div class="product-box">
+
+    <button class="product-box__fav">
+        <svg width="23" height="20">
+            <use xlink:href="#svg-fav"></use>
+        </svg>
+    </button>
+
+    <a href="" class="product-box__img">
+        <ul class="nav d-block product-tips product-box__tips">
+            <li>
+                <span class="product-tips__item product-tips__item--new">НОВИНКА</span>
+            </li>
+        </ul>
+        <picture>
+            <source srcset="images/dist/lot2.jpg 1x, images/dist/lot2@2.jpg 2x">
+            <img src="images/dist/lot2.jpg" alt="" width="304" height="304" loading="lazy">
+        </picture>
+        <div class="product-box__img__hover">
+            <picture>
+                <source srcset="images/dist/lot_hover.jpg 1x, images/dist/lot_hover@2.jpg 2x">
+                <img src="images/dist/lot_hover.jpg" alt="" width="304" height="304" loading="lazy">
+            </picture>
+        </div>
+    </a>
+    <a href="" class="product-box__body">
+        <div class="product-box__art">Артикул: <span class="product-box__art__val">LBS1</span></div>
+        <div class="product-box__title">Крупная пушистая плоская кисть для лица (для кремовых и сухих текстур) Spring Morning (лимитированная серия)</div>
+        <div class="product-box__sub-title">Lilac Beauty Sponge</div>
+    </a>
+
+    <div class="product-box__footer">
+        <div class="product-box__col-price price">
+            <div class="price price--hot">1395 <span class="rur">q</span></div>
+        </div>
+        <div class="product-box__col-btn">
+
+            <button class="btn btn--bay product-box__bay">В КОРЗИНУ</button>
+        </div>
+    </div>
+
+
+</div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -1571,6 +2255,10 @@
         <symbol id="svg-plus" viewBox="0 0 12 12">
             <path stroke-width="0" fill="currentColor" d="m11,5h-4V1c0-.55-.45-1-1-1h0c-.55,0-1,.45-1,1v4H1c-.55,0-1,.45-1,1h0c0,.55.45,1,1,1h4v4c0,.55.45,1,1,1h0c.55,0,1-.45,1-1v-4h4c.55,0,1-.45,1-1h0c0-.55-.45-1-1-1Z"/>
         </symbol>
+
+        <svg id="svg-star" viewBox="0 0 454.82 433.4">
+            <path stroke-width="0" fill="currentColor" d="m449.98,180.32l-99.66,97.15,23.54,137.22c1.02,6-1.44,12.06-6.37,15.65-2.78,2.03-6.1,3.06-9.41,3.06-2.54,0-5.1-.61-7.44-1.84l-123.23-64.78-123.22,64.77c-5.38,2.85-11.92,2.38-16.85-1.22-4.93-3.58-7.39-9.65-6.37-15.65l23.54-137.22L4.83,180.32c-4.35-4.26-5.94-10.62-4.05-16.4s6.9-10.02,12.93-10.9l137.74-20L213.06,8.2c5.39-10.93,23.31-10.93,28.7,0l61.6,124.83,137.74,20c6.03.88,11.04,5.1,12.93,10.9s.3,12.13-4.05,16.4h0Z"/>
+        </svg>
 
     </svg>
 </div>
