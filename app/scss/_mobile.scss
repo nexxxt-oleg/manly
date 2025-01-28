@@ -358,7 +358,7 @@
   }
   .single-product__preview {
     order: 6;
-
+    border-bottom: none;
   }
   .single-product__tabs {
     order: 7;
@@ -675,6 +675,10 @@
 }
 
 @media (max-width: 768px) {
+  .modal-content {
+    width: 100%;
+    border-radius: 0;
+  }
   .form-modal__inp,
   .form-modal__textarea {
     font-size: 12px;
@@ -970,5 +974,9 @@
   .form-send__inp {
     padding: 5px 60px 5px 15px;
     height: 48px;
+  }
+  .modal-content {
+    padding: 0;
+    min-height: 100vh;
   }
 }

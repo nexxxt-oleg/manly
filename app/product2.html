@@ -220,6 +220,14 @@
                         ПОДПИСАТЬСЯ
                     </button>
                 </div>
+                <div class="single-product__subscription-product">
+                    <div class="single-product__subscription-product__active">
+                        <svg width="24" height="24">
+                            <use xlink:href="#svg-send-active"></use>
+                        </svg>
+                        <span>Вы подписаны на товар, мы уведомим вас, когда он появится в наличии.</span>
+                    </div>
+                </div>
                 <div class="single-product__preview">
                     <p>Новая коллекция насыщенных кремовых помад - это яркий и эффектный выбор для любого макияжа.
                         Наслаждайтесь насыщенным цветом и блеском в одно касание благодаря нежной кремовой текстуре с
@@ -430,11 +438,37 @@
                         </div>
 
                         <div class="form-modal__submit">
-                            <button class="btn btn--big btn--bay" type="submit">
+                            <button class="btn btn--big btn--bay" type="submit" data-bs-toggle="modal"
+                                    data-bs-target="#thanksRevModal">
                                 ОТПРАВИТЬ
                             </button>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="thanksRevModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title tpad30">
+                        спасибо за ваш отзыв!
+                    </div>
+                    <div class="btn-close2" data-bs-dismiss="modal">
+                        <svg width="14" height="14">
+                            <use xlink:href="#svg-close2"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="form-modal">
+                        <div class="modal-body__text text-center fpad50">
+                            Отзывы проходят модерацию нашими специалистами. Если оставленный отзыв не соответствует правилам,
+                            то он не пройдет модерацию и не будет опубликован.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
