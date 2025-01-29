@@ -1,0 +1,26 @@
+<!--#set var="title" value="404" -->
+<!--#include virtual="/parts/header.html" -->
+
+<div class="container">
+    <ul class="nav breadcrumb justify-content-center">
+        <li class="breadcrumb__item">
+            <a href="/">Главная</a>
+        </li>
+    </ul>
+
+    <div class="page-404">
+        <picture>
+            <source srcset="images/dist/404.jpg 1x, images/dist/404@2.jpg 2x"
+                    media="(min-width: 575px)">
+            <source srcset="images/dist/404_mob.jpg"
+                    media="(max-width: 574px)">
+            <img src="images/dist/404.jpg" alt="" width="440" height="236"
+                 loading="lazy">
+        </picture>
+        <h1>СТРАНИЦА НЕ НАЙДЕНА</h1>
+        <a href="/" class="btn btn--big btn--bay text-uppercase">перейти на главную</a>
+    </div>
+</div>
+
+
+<!--#include virtual="/parts/footer.html" -->
