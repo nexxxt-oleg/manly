@@ -1729,6 +1729,12 @@ button.close {
       color: #757575;
     }
   }
+
+  &.breadcrumb--white {
+    a {
+      color: #fff;
+    }
+  }
 }
 
 .title-page {
@@ -2800,7 +2806,7 @@ button.close {
   border-radius: 12px;
   width: 546px;
   padding: 10px;
-  box-shadow: 0 0 15px 0  rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
 
   .form-modal {
     width: 100%;
@@ -3011,10 +3017,12 @@ button.close {
   background-color: #efeff0;
   border: none;
   color: #000;
+
   &::placeholder {
     color: #757575;
     opacity: 1;
   }
+
   &:hover,
   &:active,
   &:focus {
@@ -3023,6 +3031,7 @@ button.close {
     outline: none;
   }
 }
+
 .form-modal__textarea {
   display: block;
   width: 100%;
@@ -3035,10 +3044,12 @@ button.close {
   color: #000;
   resize: none;
   border: none;
+
   &::placeholder {
     color: #757575;
     opacity: 1;
   }
+
   &:hover,
   &:active,
   &:focus {
@@ -3052,6 +3063,7 @@ button.close {
   display: flex;
   justify-content: center;
   padding: 10px 0;
+
   .btn {
     width: 180px;
   }
@@ -3060,18 +3072,22 @@ button.close {
 .tpad30 {
   padding-top: 30px;
 }
+
 .fpad50 {
   padding-bottom: 50px;
 }
+
 .modal-body__text {
   font-size: 14px;
   line-height: 18px;
   color: #000;
 }
+
 .single-product__price {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   .price--old {
     margin-bottom: 5px;
   }
@@ -3085,20 +3101,24 @@ button.close {
   font-size: 14px;
   line-height: 1.3;
   font-weight: 500;
+
   svg {
     min-width: 24px;
     margin-right: 10px;
   }
 }
+
 .text p strong {
   font-weight: 500;
 }
 
 .single-product__promo {
   padding-top: 60px;
+
   &__desc {
     padding-left: 84px;
     padding-right: 84px;
+
     h2 {
       font-weight: bold;
       font-size: 16px;
@@ -3106,18 +3126,22 @@ button.close {
       text-transform: uppercase;
       margin-bottom: 20px;
     }
+
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
+
       li {
         padding-left: 40px;
         position: relative;
         font-size: 14px;
         line-height: 18px;
+
         &:not(:last-child) {
           margin-bottom: 15px;
         }
+
         &::after {
           content: '';
           display: block;
@@ -3137,6 +3161,7 @@ button.close {
 .single-product__promo__full {
   margin-bottom: 30px;
   position: relative;
+
   &__img {
     position: absolute;
     z-index: 1;
@@ -3146,12 +3171,14 @@ button.close {
     height: 450px;
     border-radius: 10px;
     overflow: hidden;
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
+
   &__wrap {
     position: relative;
     z-index: 10;
@@ -3167,6 +3194,7 @@ button.close {
   justify-content: center;
   padding: 50px 0 100px;
   flex-direction: column;
+
   h1 {
     padding: 30px 0 40px;
     margin: 0;
@@ -3176,5 +3204,166 @@ button.close {
     letter-spacing: 0.1em;
     color: #000;
     text-align: center;
+  }
+}
+
+.rent-banner {
+  height: 770px;
+  background: #101010 url("../images/dist/rent_top.jpg") 50% 100% no-repeat;
+  background-size: auto 100%;
+  margin-bottom: 70px;
+  padding-top: 20px;
+  text-align: center;
+
+  &__title {
+    font-size: 96px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    letter-spacing: 0.1em;
+    padding-top: 60px;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  &__subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    font-size: 36px;
+    padding-bottom: 50px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+  }
+}
+
+.h2 {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #000;
+  margin-bottom: 35px;
+}
+
+.rent-box {
+  padding: 50px 60px;
+  border-radius: 10px;
+  background: #eee;
+  margin-bottom: 35px;
+
+  overflow: hidden;
+  &__header {
+    float: left;
+    width: 50%;
+    padding-right: 15px;
+  }
+  &__image {
+    width: 50%;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+  }
+  &__desc {
+    float: left;
+    clear: left;
+    width: 50%;
+    padding-right: 15px;
+    ul {
+      padding: 0 0 15px;
+      margin: 0;
+      list-style: none;
+      li {
+        padding: 0 0 5px 45px;
+        font-size: 14px;
+        line-height: 18px;
+        position: relative;
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: 8px;
+          left: 0;
+          width: 20px;
+          height: 1px;
+          background: var(--color-violet);
+        }
+      }
+    }
+  }
+  &__art {
+    color: #757575;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    padding-bottom: 5px;
+    span {
+      color: #010101;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #000;
+    padding-bottom: 15px;
+    margin: 0;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    &__col-price {
+      width: 200px;
+      padding-right: 20px;
+      min-width: 200px;
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 0.9;
+      .small {
+        font-size: 18px;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.ls-1 {
+  letter-spacing: 0.1em;
+}
+
+.air-datepicker-global-container {
+  z-index: 9999;
+}
+
+.form-modal__inp--date {
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 493.04 512'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B stroke-width: 0px; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='m67.89,512h357.26c37.45,0,67.89-30.44,67.89-67.89V105.81c0-37.45-30.44-67.89-67.89-67.89h-26.93v-18.96c0-10.43-8.53-18.96-18.96-18.96s-18.96,8.53-18.96,18.96v18.96h-227.55v-18.96c0-10.43-8.53-18.96-18.96-18.96s-18.96,8.53-18.96,18.96v18.96h-26.93C30.44,37.93,0,68.36,0,105.81v338.3c0,37.45,30.44,67.89,67.89,67.89h0ZM37.93,105.81c0-16.5,13.46-29.96,29.96-29.96h26.93v18.96c0,10.43,8.53,18.96,18.96,18.96s18.96-8.53,18.96-18.96v-18.96h227.56v18.96c0,10.43,8.53,18.96,18.96,18.96s18.96-8.53,18.96-18.96v-18.96h26.93c16.5,0,29.96,13.46,29.96,29.96v55.37H37.93v-55.37Zm0,93.3h417.19v245c0,16.5-13.46,29.96-29.96,29.96H67.89c-16.5,0-29.96-13.46-29.96-29.96v-245Z'/%3E%3C/svg%3E");
+  background-position: right 15px top 50%;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+}
+.form-modal__ps {
+  padding: 0 15px 20px;
+  font-size: 12px;
+  line-height: 16px;
+  a {
+    color: #000;
+    font-weight: 500;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
