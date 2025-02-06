@@ -1,4 +1,3 @@
-
 @media (min-width: 1199px) {
 
   .fix_menu {
@@ -27,6 +26,9 @@
 }
 
 @media (max-width: 1400px) {
+  .engraving-conditions__item__h2 {
+    font-size: 28px;
+  }
   .single-product__promo__full__img img {
     height: 450px;
 
@@ -289,6 +291,7 @@
     .accordion-header {
       display: none;
     }
+
     .accordion-collapse {
       display: block;
     }
@@ -298,6 +301,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+
     .slider-product__item {
       width: 25%;
     }
@@ -310,6 +314,7 @@
   }
   .accordion.accordion--mob {
     border-top: 1px solid #010101;
+
     .accordion-header {
       display: block;
       position: relative;
@@ -318,6 +323,7 @@
       text-transform: uppercase;
       color: #010101;
       font-weight: bold;
+
       &::after {
         content: '';
         display: block;
@@ -333,10 +339,12 @@
         position: absolute;
         z-index: 1;
       }
+
       &:not(.collapsed)::after {
         transform: rotate(-180deg);
       }
     }
+
     .accordion__item {
       border-bottom: 1px solid #010101;
     }
@@ -388,10 +396,13 @@
   .single-product__mob-img {
     position: relative;
     order: 1;
+
     &__wrap {
       display: block;
+
       .single-product__image-item {
         height: 310px;
+
         img {
           display: block;
           height: 310px;
@@ -400,6 +411,7 @@
           object-position: 50% 50%;
         }
       }
+
       .swiper-pagination {
         position: relative;
         left: auto;
@@ -413,18 +425,21 @@
           width: 9px;
           height: 9px;
           border-radius: 5px;
+
           &.swiper-pagination-bullet-active {
             background: #1d1d1b;
           }
         }
       }
     }
+
     .single-product__tips {
       position: absolute;
       z-index: 10;
       left: 0;
       top: 0;
       display: block !important;
+
       li {
         padding-bottom: 10px;
       }
@@ -657,6 +672,7 @@
     gap: 0;
     width: 100%;
     height: 100%;
+
     .rev-list__item.swiper-slide {
       width: 260px;
       height: auto;
@@ -671,6 +687,7 @@
   }
   .related-products {
     padding-bottom: 50px;
+
     .swiper-slide.slider-product__item {
       width: 304px;
       height: auto;
@@ -685,64 +702,140 @@
   }
   .rent-box {
     padding: 25px 15px;
+
     &__header {
       width: 100%;
       float: none;
       text-align: center;
     }
+
     &__art {
       padding-bottom: 0;
     }
+
     &__title {
       font-size: 18px;
       line-height: 24px;
     }
+
     &__image {
       width: 100%;
       float: none;
       padding-bottom: 25px;
+
       img {
         height: 170px;
         width: auto;
       }
     }
+
     &__desc {
       width: 100%;
       float: none;
     }
+
     &__footer {
       flex-direction: column;
       align-items: center;
+
       &__col-price {
         padding: 0 0 15px 0;
         width: 100%;
         text-align: center;
         font-size: 24px;
+
         .small {
           font-size: 16px;
         }
       }
     }
+
     .rent-box__footer__col-btn {
       width: 100%;
       display: flex;
       justify-content: center;
     }
   }
+  .engraving-banner__wrap {
+    padding-top: 45px;
+  }
+  .engraving-banner__subtitle {
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  .svg-title {
+    width: 407px;
+    height: auto;
+  }
+  .engraving-banner {
+    height: 600px;
+    margin-bottom: 45px;
+  }
 }
 
 @media (max-width: 768px) {
+  .engraving-conditions__title {
+    padding-bottom: 20px;
+  }
+  .engraving-conditions__item {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .engraving-conditions__item__h2 {
+    font-size: 24px;
+    b {
+      font-size: 30px;
+    }
+  }
+  .engraving-conditions__footer p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .engraving-conditions__list {
+    display: block;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .engraving-conditions__item {
+    padding: 0 0 35px 0;
+    text-align: center;
+    width: 100%;
+
+    &:first-child {
+      margin-bottom: 35px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+  }
+  .engraving-conditions__footer {
+    padding: 10px 0 40px;
+  }
+
+  .engraving-banner__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .svg-title {
+    width: 207px;
+    height: auto;
+  }
   .single-product__promo__full {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 20px;
+
     & .single-product__promo__desc {
-      padding: 0 20px 30px 20px ;
+      padding: 0 20px 30px 20px;
     }
   }
   .single-product__promo__full__img {
     height: 100%;
+
     & img,
     & .zoom-hover__img {
       height: 100%;
@@ -897,9 +990,11 @@
   .rent-banner {
     padding-top: 10px;
     margin-bottom: 40px;
+
     &__subtitle {
       font-size: 24px;
     }
+
     &__text {
       font-size: 16px;
     }
@@ -917,19 +1012,27 @@
 }
 
 @media (max-width: 575px) {
+  .engraving-banner {
+    padding-top: 0;
+    height: 480px;
+    background-image: url("../images/dist/bg-engraving_mob.jpg");
+  }
   .rent-banner {
     padding-top: 0;
     height: 480px;
     background-image: url("../images/dist/rent_top_mob.jpg");
+
     &__subtitle {
       font-size: 20px;
       line-height: 1.2;
       padding-bottom: 25px;
     }
+
     &__text {
       font-size: 14px;
       line-height: 24px;
     }
+
     &__title {
       font-size: 32px;
     }
@@ -941,6 +1044,7 @@
   }
   .single-product__subscription-product__inp {
     padding-right: 0;
+
     input {
       padding-right: 140px;
     }
@@ -961,6 +1065,7 @@
     padding-right: 8px;
     display: block;
     text-align: left;
+
     &__value {
       font-size: 36px;
       line-height: 42px;
@@ -973,8 +1078,10 @@
   }
   .single-product__props-top {
     display: block;
+
     .single-product__props-top__item {
       padding-right: 0;
+
       dt {
         font-weight: 400;
       }
@@ -990,6 +1097,7 @@
   .single-product__col-btn {
     flex-grow: 1;
     padding-right: 10px;
+
     .btn {
       width: 100%;
     }
@@ -1004,7 +1112,7 @@
     border-radius: 24px;
     padding: 4px;
   }
-  .single-product__sku__item{
+  .single-product__sku__item {
     width: 48px;
   }
   .single-product__sku__item__caption {
@@ -1014,7 +1122,6 @@
     min-width: 48px;
     width: 48px;
   }
-
 
 
   .catalog-list {

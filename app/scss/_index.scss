@@ -3428,7 +3428,6 @@ button.close {
 }
 
 .engraving-conditions {
-  padding-bottom: 90px;
   &__title {
     font-size: 18px;
     text-transform: uppercase;
@@ -3466,6 +3465,25 @@ button.close {
       b {
         font-size: 48px;
         font-weight: bold;
+      }
+    }
+  }
+
+  &__footer {
+    padding: 75px 0 60px;
+    text-align: center;
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 16px;
+      a {
+        font-size: 18px;
+        font-weight: 500;
+        color: #4e1498;
+        text-decoration: none;
+      }
+      b {
+        font-weight: 500;
       }
     }
   }
