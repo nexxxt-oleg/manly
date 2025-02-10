@@ -3653,7 +3653,14 @@ button.close {
 .mb-15 {
   margin-bottom: 15px;
 }
-
+.top-anchor {
+  height: 1px;
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: 0;
+  width: 100%;
+}
 .fpad25 {
   padding-bottom: 25px;
 }
